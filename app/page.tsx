@@ -38,8 +38,8 @@ export default function Home() {
                   Watch video
                 </Button>
               </div>
-              <div className="space-y-4">
-                <h2 className="text-xl font-medium">Trusted by these six companies so far</h2>
+              <div className="space-y-4 pt-20">
+                <h2 className="text-base font-medium text-stone-600">Trusted by these six companies so far</h2>
                 <div className="flex flex-wrap justify-center items-center gap-12">
                   {[
                    { name: "TechCorp", logo: "/img/logos/behance.webp" },
