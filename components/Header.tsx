@@ -1,9 +1,6 @@
-"use client"
-
 import * as React from "react"
 import Link from "next/link"
 import Image from "next/image"
-
 import { cn } from "@/lib/utils"
 import {
   NavigationMenu,
@@ -16,26 +13,15 @@ import {
 } from "@/components/ui/navigation-menu"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Heart, Star, Search} from 'lucide-react'
+import { Heart, Star, Search } from 'lucide-react'
 
-const Header = () => {
-  const [isScrolled, setIsScrolled] = React.useState(false)
-
-  React.useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0)
-    }
-
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
-
+export default function Header() {
   return (
-    <header className={`sticky top-0 z-50 w-full border-b ${isScrolled ? 'bg-white' : 'bg-background'}`}>
-      <div className="flex h-14 items-center justify-between container mx-auto max-w-[1200px] px-4">
+    <header className="sticky top-0 z-50 w-full border-b bg-background">
+      <div className="flex h-16 items-center justify-between container mx-auto max-w-[1300px] px-4">
         <div className="mr-4 flex items-center">
           <Link className="mr-6 flex items-center space-x-2" href="/">
-            <Image src="/favicon.ico" alt="Favicon" width={24} height={24} />
+            <Image src="/favicon.ico" alt="Semdeals Logo" width={26} height={26} />
             <span className="hidden font-bold sm:inline-block">Semdeals</span>
           </Link>
           <NavigationMenu>
@@ -50,7 +36,6 @@ const Header = () => {
                           className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                           href="/"
                         >
-                    
                           <div className="mb-2 mt-4 text-lg font-medium">
                           ⚡ Semdeals
                           </div>
@@ -74,9 +59,64 @@ const Header = () => {
                 </NavigationMenuContent>
               </NavigationMenuItem>
 
-
+              <NavigationMenuItem>
+                <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
+                    <li className="row-span-3">
+                      <NavigationMenuLink asChild>
+                        <Link
+                          className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                          href="/services"
+                        >
+                          <div className="mb-2 mt-4 text-lg font-medium">
+                           Image Services
+                          </div>
+                          <p className="text-sm leading-tight text-muted-foreground">
+                            Powerful image editing and manipulation tools at your fingertips.
+                          </p>
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                    <ListItem href="/services/photo-effects" title="Photo Effects">
+                      Enhance your images with our wide range of photo effects.
+                    </ListItem>
+                    <ListItem href="/services/photo-filters" title="Photo Filters">
+                      Apply professional-grade filters to transform your photos.
+                    </ListItem>
+                    <ListItem href="/services/tools" title="Tools">
+                      Access our suite of image editing and manipulation tools.
+                    </ListItem>
+                  </ul>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
+                    <ListItem href="/resources/blog" title="Blog">
+                      Read our latest articles and insights.
+                    </ListItem>
+                    <ListItem href="/resources/case-studies" title="Case Studies">
+                      Explore success stories from our clients.
+                    </ListItem>
+                    <ListItem href="/resources/seo-tools" title="SEO Tools">
+                      Powerful tools to boost your SEO efforts.
+                    </ListItem>
+                    <ListItem href="/resources/seo-checklist" title="SEO Checklist">
+                      Comprehensive guide for optimizing your website.
+                    </ListItem>
+                    <ListItem href="/resources/keyword-research" title="Keyword Research">
+                      Tools and tips for effective keyword research.
+                    </ListItem>
+                    <ListItem href="/resources/backlink-analyzer" title="Backlink Analyzer">
+                      Analyze and improve your backlink profile.
+                    </ListItem>
+                  </ul>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger>Services</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="grid grid-cols-4 gap-3 p-6 md:w-[800px]">
                     <ul className="space-y-2">
@@ -141,80 +181,6 @@ const Header = () => {
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
-
-
-
-              <NavigationMenuItem>
-                <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
-                    <li className="row-span-3">
-                      <NavigationMenuLink asChild>
-                        <Link
-                          className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                          href="/services"
-                        >
-                          
-                          <div className="mb-2 mt-4 text-lg font-medium">
-                           Image Services
-                          </div>
-                          <p className="text-sm leading-tight text-muted-foreground">
-                            Powerful image editing and manipulation tools at your fingertips.
-                          </p>
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <ListItem href="/services/photo-effects" title="Photo Effects">
-                      Enhance your images with our wide range of photo effects.
-                    </ListItem>
-                    <ListItem href="/services/photo-filters" title="Photo Filters">
-                      Apply professional-grade filters to transform your photos.
-                    </ListItem>
-                    <ListItem href="/services/tools" title="Tools">
-                      Access our suite of image editing and manipulation tools.
-                    </ListItem>
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
-                    <ListItem href="/resources/blog" title="Blog">
-                      Read our latest articles and insights.
-                    </ListItem>
-                    <ListItem href="/resources/case-studies" title="Case Studies">
-                      Explore success stories from our clients.
-                    </ListItem>
-                    <ListItem href="/resources/seo-tools" title="SEO Tools">
-                      Powerful tools to boost your SEO efforts.
-                    </ListItem>
-                    <ListItem href="/resources/seo-checklist" title="SEO Checklist">
-                      Comprehensive guide for optimizing your website.
-                    </ListItem>
-                    <ListItem href="/resources/keyword-research" title="Keyword Research">
-                      Tools and tips for effective keyword research.
-                    </ListItem>
-                    <ListItem href="/resources/backlink-analyzer" title="Backlink Analyzer">
-                      Analyze and improve your backlink profile.
-                    </ListItem>
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <Link href="/faq" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Company
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <Link href="/blog" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Enterprice
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Pricing</NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -234,6 +200,20 @@ const Header = () => {
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/company" legacyBehavior passHref>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    Company
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/enterprise" legacyBehavior passHref>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    Enterprise
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
         </div>
@@ -245,10 +225,22 @@ const Header = () => {
             </Button>
           </Link>
           <Link href="/signup">
-          <Button>Get Started</Button>
+            <Button>Get Started</Button>
           </Link>
         </div>
       </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Semdeals",
+        "url": "https://www.semdeals.com",
+        "logo": "https://www.semdeals.com/favicon.ico",
+        "sameAs": [
+          "https://www.facebook.com/semdeals",
+          "https://www.twitter.com/semdeals",
+          "https://www.linkedin.com/company/semdeals"
+        ]
+      })}} />
     </header>
   )
 }
@@ -278,7 +270,6 @@ const ListItem = React.forwardRef<
   )
 })
 ListItem.displayName = "ListItem"
-
 
 const ListItemWithIcon = React.forwardRef<
   React.ElementRef<"a">,
@@ -314,5 +305,3 @@ const ListItemWithIcon = React.forwardRef<
   )
 })
 ListItemWithIcon.displayName = "ListItemWithIcon"
-
-export default Header
