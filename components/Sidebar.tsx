@@ -11,10 +11,9 @@ export default async function Sidebar() {
   const latestPosts = await getLatestPosts()
 
   const webTools = [
-    { name: "Keyword Resource", description: "Find the best keywords for your content", isNew: true },
-    { name: "SEO Analyzer", description: "Optimize your website for search engines", isNew: false },
-    { name: "Code Formatter", description: "Clean and format your code instantly", isNew: true },
-    { name: "Color Palette Generator", description: "Create beautiful color schemes", isNew: false },
+    { name: "Keyword Resourch", description: "Find the best keywords for your content", isNew: true },
+    { name: "SEO Analyzer", description: "Optimize your website for search engines", isNew: true },
+    { name: "Palette Generator", description: "Create beautiful color schemes", isNew: false },
   ]
 
   return (
