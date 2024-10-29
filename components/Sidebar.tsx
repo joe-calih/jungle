@@ -49,6 +49,9 @@ export default async function Sidebar() {
       </Card>
 
       <Card>
+        <CardHeader>
+          <CardTitle>Web Tools</CardTitle>
+        </CardHeader>
         <CardContent>
           <ul className="space-y-4">
             {webTools.map((tool, index) => (

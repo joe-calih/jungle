@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Column 1 */}
           <div>
             <h3 className="text-lg font-medium mb-4">Components</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 font-medium">
               {["Hero Sections", "Logo Clouds", "Bento Grids", "CTA Sections", "Testimonials", "Feature Sections", "Pricing Sections", "Cards", "Navbars", "Footers", "Login and Signup", "Contact sections", "Blog Sections", "Blog Content Sections", "FAQs", "Sidebars", "Stats Sections"].map((item) => (
                 <li key={item}>
                   <Link href="#" className="text-gray-600 hover:text-gray-900">
