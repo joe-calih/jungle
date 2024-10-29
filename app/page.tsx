@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import Company from "@/components/Companys";
+import BlogSection from "@/components/BlogSec";
 import {
   Accordion,
   AccordionContent,
@@ -121,53 +122,7 @@ export default function Home() {
           </div>
         </div>
 
-{/* Section 3: BLog*/}
-        <div className="w-full bg-white py-16">
-      <div className="mx-auto max-w-[1200px] px-4">
-        <div className="text-center mb-12">
-          <p className="text-sm text-gray-500 mb-4">TAG LINE</p>
-          <h1 className="text-4xl font-bold mb-4">Blog Posts</h1>
-          <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque
-            mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.
-          </p>
-          <a href="#" className="text-black inline-flex items-center">
-            Explore all posts <ArrowRight className="ml-2 h-4 w-4" />
-          </a>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {[1, 2, 3].map((index) => (
-            <Card key={index} className="border-none shadow-none">
-              <CardHeader className="p-0">
-                <div className="bg-gray-100 aspect-video flex items-center justify-center">
-                  <Image
-                    src="/placeholder.svg"
-                    alt="Blog post image"
-                    width={400}
-                    height={225}
-                    className="w-24 h-24"
-                  />
-                </div>
-              </CardHeader>
-              <CardContent className="px-0 pt-6">
-                <h2 className="text-xl font-semibold mb-2">
-                  Duis sem sem, gravida vel porttitor eu, volutpat ut arcu
-                </h2>
-                <p className="text-gray-600 mb-4">
-                  Pellentesque eget quam ligula. Sed felis ante, consequat nec ultrices ut, ornare
-                  quis metus. Vivamus sit amet tortor vel enim sollicitudin hendrerit.
-                </p>
-              </CardContent>
-              <CardFooter className="px-0">
-                <a href="#" className="text-black inline-flex items-center">
-                  Read more <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
-              </CardFooter>
-            </Card>
-          ))}
-        </div>
-      </div>
-    </div>
+<BlogSection/>
 
 
         {/* Section 3: Trusted Partners */}
