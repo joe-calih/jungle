@@ -88,10 +88,8 @@ export default async function BlogPost({ params }: { params: { slug: string } })
                 <Separator orientation="vertical" className="h-6" />
                 <span className="text-muted-foreground">{post.date}</span>
                 <Separator orientation="vertical" className="h-6" />
-                <Link href={`/category/${encodeURIComponent(post.category.toLowerCase())}`}>
-                  <Badge variant="secondary" className="hover:bg-secondary-foreground hover:text-secondary cursor-pointer">
-                    {post.category}
-                  </Badge>
+                <Link href={`/category/${encodeURIComponent(post.category.toLowerCase())}`} className="font-medium hover:text-blue-600">
+                 {post.category}
                 </Link>
                 <Separator orientation="vertical" className="h-6" />
                 <span className="flex items-center gap-1 text-muted-foreground">
