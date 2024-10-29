@@ -47,9 +47,9 @@ export default function Home() {
                    { name: "GlobalSolutions", logo: "/img/logos/minty.webp" },
                    { name: "SmartSystems", logo: "/img/logos/envanto.webp" },
                    { name: "DataDrive", logo: "/img/logos/vimeo.webp" },
+                   { name: "Webflow", logo: "/img/logos/webflow.webp" },
                    { name: "TechCorp", logo: "/img/logos/behance.webp" },
                    { name: "InnovateX", logo: "/img/logos/vertigo.webp" },
-                   { name: "Webflow", logo: "/img/logos/webflow.webp" },
                   ].map((company) => (
                     <div key={company.name} className="flex items-center justify-center">
                       <Image
