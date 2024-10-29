@@ -40,16 +40,14 @@ export default async function BlogSection() {
                 </div>
               </CardHeader>
               <CardContent className="px-0 pt-6">
-              <Link href={`/blog/${post.slug}`} className="text-black inline-flex items-center relative group">
-  <h2 className="font-semibold text-lg mb-2 line-clamp-2">
-    {post.title}
-  </h2>
-  {/* Animated Underline */}
-  <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
-</Link>
-<p className="text-gray-600 mb-4 line-clamp-3">
-  {post.excerpt}
-</p>
+              <Link href={`/blog/${post.slug}`} className="text-black inline-flex items-center hover:underline transition-all duration-300 group-hover:w-full">
+                <h2 className="font-semibold text-lg mb-2 line-clamp-2">
+                  {post.title}
+                </h2>
+                </Link>
+                <p className="text-gray-600 mb-4 line-clamp-3">
+                  {post.excerpt}
+                </p>
               </CardContent>
               <CardFooter className="px-0">
                 <Link href={`/blog/${post.slug}`} className="text-black inline-flex items-center">
