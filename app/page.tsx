@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import Company from "@/components/Companys";
+import Feature from "@/components/Feature";
 import BlogSection from "@/components/BlogSec";
 import {
   Accordion,
@@ -10,7 +11,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { PlayCircle, Check,Zap, Users, Layout, ArrowRight} from "lucide-react"
+import { Check, ArrowRight, Play} from "lucide-react"
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 
 export default function Home() {
@@ -20,8 +21,8 @@ export default function Home() {
         {/* Header Section */}
         <section className="flex items-center justify-center w-full bg-white py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
-            <div className="mx-auto max-w-[1200px] space-y-12 text-center">
-            <div className="mb-8 inline-flex items-center rounded-full border bg-background px-3 py-1 text-sm">
+            <div className="mx-auto max-w-[1200px] space-b-1 text-center">
+            <div className="mb-8 inline-flex items-center rounded-full border bg-background px-1 py-1 text-sm">
           <Badge variant="secondary" className="mr-2 rounded-full px-2 font-normal">
             New Release
           </Badge>
@@ -33,29 +34,28 @@ export default function Home() {
                 <br />
                 for small businesses.
               </h1>
-              <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Most bookkeeping software is accurate, but hard to use. We make the
-                opposite trade-off, and hope you don&apos;t get audited.
-              </p>
-              <div className="flex flex-col gap-4 min-[400px]:flex-row items-center justify-center">
-                <Button size="lg" className="bg-[#0f172a] text-white hover:bg-[#0f172a]/90">
-                  Get 6 months free
-                </Button>
-                <Button size="lg" variant="outline" className="gap-1">
-                  <PlayCircle className="h-5 w-5" />
-                  Watch video
-                </Button>
-              </div>
+              <p className="mx-auto mb-8 max-w-[700px] text-muted-foreground md:text-xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia possimus fugit ab cumque
+          consequuntur pariatur provident? Nulla consequuntur nisi eum!
+        </p>
+        <div className="mb-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <Button size="lg" className="w-full sm:w-auto">
+            Get Started
+          </Button>
+          <Button size="lg" variant="outline" className="w-full sm:w-auto">
+            <Play className="mr-2 h-4 w-4" /> Watch Demo
+          </Button>
+        </div>
               <div className="space-y-4 pt-20">
                 <h2 className="text-base font-medium text-stone-600">Trusted by these six companies so far</h2>
                 <div className="flex flex-wrap justify-center items-center gap-12">
                   {[
                    { name: "Proline", logo: "/img/logos/proline.webp" },
-                   { name: "SmartSystems", logo: "/img/logos/envanto.webp" },
+                   { name: "InnovateX", logo: "/img/logos/vertigo.webp" },
                    { name: "DataDrive", logo: "/img/logos/vimeo.webp" },
                    { name: "Webflow", logo: "/img/logos/webflow.webp" },
                    { name: "TechCorp", logo: "/img/logos/behance.webp" },
-                   { name: "InnovateX", logo: "/img/logos/vertigo.webp" },
+                   { name: "SmartSystems", logo: "/img/logos/envanto.webp" },
                    { name: "GlobalSolutions", logo: "/img/logos/minty.webp" },
                   ].map((company) => (
                     <div key={company.name} className="flex items-center justify-center">
@@ -73,29 +73,12 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <Feature/>
         
          {/* Barner Section */}
         <div className="min-h-screen bg-white">
           <div className="mx-auto max-w-[1200px] px-4 py-12 sm:px-6 lg:px-8">
-            <header className="text-center mb-16">
-              <p className="text-sm font-medium text-gray-600 mb-4">Top-notch Craft</p>
-              <h1 className="text-5xl font-bold text-gray-900 mb-4">Shape tomorrow</h1>
-              <p className="text-xl text-gray-600 mb-12">Join us to build flawless web solutions.</p>
-              <div className="flex justify-center space-x-8">
-                <div className="flex items-center">
-                  <Zap className="h-5 w-5 text-gray-400 mr-2" />
-                  <span className="text-sm font-medium text-gray-900">Boost Revenue</span>
-                </div>
-                <div className="flex items-center">
-                  <Users className="h-5 w-5 text-gray-400 mr-2" />
-                  <span className="text-sm font-medium text-gray-900">Higher Engagement</span>
-                </div>
-                <div className="flex items-center">
-                  <Layout className="h-5 w-5 text-gray-400 mr-2" />
-                  <span className="text-sm font-medium text-gray-900">Stunning Layouts</span>
-                </div>
-              </div>
-            </header>
             <Card className="mt-16 bg-gray-50 overflow-hidden">
               <div className="flex flex-col lg:flex-row">
                 <div className="p-8 lg:p-12 lg:w-1/2">
@@ -190,7 +173,7 @@ export default function Home() {
         <section id="pricing" className="py-12 bg-secondary">
           <div className="container mx-auto max-w-[1200px] px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card>
+              <Card className="relative hover:shadow-lg transition-shadow duration-300">
                 <CardHeader>
                   <CardTitle>Basic</CardTitle>
                   <CardDescription>For individuals and small teams</CardDescription>
@@ -224,7 +207,7 @@ export default function Home() {
                   <Button className="w-full" variant="outline">Contact Sales</Button>
                 </CardFooter>
               </Card>
-              <Card className="border-primary">
+              <Card className="border-primary  relative hover:shadow-lg transition-shadow duration-300">
                 <CardHeader>
                   <CardTitle className="flex items-center justify-between">
                     Pro
@@ -257,7 +240,7 @@ export default function Home() {
                   <Button className="w-full" variant="default">Get Started</Button>
                 </CardFooter>
               </Card>
-              <Card>
+              <Card className="relative hover:shadow-lg transition-shadow duration-300">
                 <CardHeader>
                   <CardTitle>Enterprise</CardTitle>
                   <CardDescription>For large organizations</CardDescription>
