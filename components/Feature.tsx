@@ -59,10 +59,11 @@ export default function Component() {
           />
         </div>
         <div className="flex justify-center mt-12">
-          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-            Book a Call<ArrowRight className="ml-1 h-4 w-4" />
-          </Button>
-        </div>
+  <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full">
+    Book a Call <ArrowRight className="ml-1 h-4 w-4" />
+  </Button>
+</div>
+
       </div>
     </section>
   )
