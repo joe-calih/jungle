@@ -43,11 +43,11 @@ export default function Home() {
                 <h2 className="text-base font-medium text-stone-600">Trusted by these six companies so far</h2>
                 <div className="flex flex-wrap justify-center items-center gap-12">
                   {[
-                   { name: "TechCorp", logo: "/img/logos/behance.webp" },
                    { name: "Proline", logo: "/img/logos/proline.webp" },
                    { name: "GlobalSolutions", logo: "/img/logos/minty.webp" },
                    { name: "SmartSystems", logo: "/img/logos/envanto.webp" },
                    { name: "DataDrive", logo: "/img/logos/vimeo.webp" },
+                   { name: "TechCorp", logo: "/img/logos/behance.webp" },
                    { name: "InnovateX", logo: "/img/logos/vertigo.webp" },
                    { name: "Webflow", logo: "/img/logos/webflow.webp" },
                   ].map((company) => (
