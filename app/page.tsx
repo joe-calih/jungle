@@ -10,7 +10,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { PlayCircle, Check,Zap, Users, Layout} from "lucide-react"
+import { PlayCircle, Check,Zap, Users, Layout, ArrowRight} from "lucide-react"
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 
 export default function Home() {
@@ -21,6 +21,13 @@ export default function Home() {
         <section className="flex items-center justify-center w-full bg-white py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="mx-auto max-w-[1200px] space-y-12 text-center">
+            <div className="mb-8 inline-flex items-center rounded-full border bg-background px-3 py-1 text-sm">
+          <Badge variant="secondary" className="mr-2 rounded-full px-2 font-normal">
+            New Release
+          </Badge>
+          Get started with our new product release today
+          <ArrowRight className="ml-2 h-4 w-4" />
+        </div>
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                 Marketing <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">made simple</span>
                 <br />
