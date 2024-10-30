@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
-import { ArrowRight, Link, Search,Play  } from "lucide-react"
+import { ArrowRight, Link, Search,Play, AlertTriangle  } from "lucide-react"
 import Company from "@/components/Companys";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 
@@ -14,7 +14,7 @@ export default function LandingPage() {
         <header className="flex justify-between items-center mb-8">
           <h1 className="text-3xl font-bold">KeywordMaster</h1>
         </header>
-
+        <AlertTriangle className="h-16 w-16 text-yellow-500 mx-auto" />
              {/* Header Section */}
              <section className="flex items-center justify-center w-full bg-white py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
