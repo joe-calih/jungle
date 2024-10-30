@@ -31,7 +31,7 @@ export default function Component() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (
-            <Card key={index} className="bg-card">
+            <Card key={index} className="bg-card  object-contain grayscale hover:grayscale-0 transition-all duration-300">
               <CardContent className="p-0">
                 <Image
                   src="/placeholder.svg"
