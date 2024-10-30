@@ -7,10 +7,10 @@ export default function Component() {
   return (
     <section className="w-full flex items-center justify-center md:py-4 lg:py-4 bg-background text-foreground">
       <div className="container max-w-[1200px] ">
-      <header className="text-center mb-16">
+      <header className="text-center mb-10">
               <p className="text-sm font-medium text-gray-600 mb-4">Top-notch Craft</p>
               <h1 className="text-5xl font-bold text-gray-900 mb-4">Shape tomorrow</h1>
-              <p className="text-xl text-gray-600 mb-12">Join us to build flawless web solutions.</p>
+              <p className="text-base text-gray-600 mb-12">Join us to build flawless web solutions.</p>
               <div className="flex justify-center space-x-8">
                 <div className="flex items-center">
                   <Zap className="h-5 w-5 text-gray-400 mr-2" />
@@ -27,6 +27,21 @@ export default function Component() {
               </div>
             </header>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <FeatureCard
+            icon={<Code className="h-6 w-6" />}
+            title="Setting on Auto"
+            description="Automate everything from lead qualification to setting meetings with our product."
+          />
+          <FeatureCard
+            icon={<Code className="h-6 w-6" />}
+            title="Setting on Auto"
+            description="Automate everything from lead qualification to setting meetings with our product."
+          />
+          <FeatureCard
+            icon={<Code className="h-6 w-6" />}
+            title="Setting on Auto"
+            description="Automate everything from lead qualification to setting meetings with our product."
+          />
           <FeatureCard
             icon={<Code className="h-6 w-6" />}
             title="Setting on Auto"

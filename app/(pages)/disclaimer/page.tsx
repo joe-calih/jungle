@@ -1,7 +1,11 @@
+import Image from 'next/image'
+import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
-import { ArrowRight, Link, Search } from "lucide-react"
+import { ArrowRight, Link, Search,Play  } from "lucide-react"
+import Company from "@/components/Companys";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 
 export default function LandingPage() {
   return (
@@ -10,6 +14,62 @@ export default function LandingPage() {
         <header className="flex justify-between items-center mb-8">
           <h1 className="text-3xl font-bold">KeywordMaster</h1>
         </header>
+
+             {/* Header Section */}
+             <section className="flex items-center justify-center w-full bg-white py-12 md:py-24 lg:py-32">
+          <div className="container px-4 md:px-6">
+            <div className="mx-auto max-w-[1200px] space-b-1 text-center">
+            <div className="mb-8 inline-flex items-center rounded-full border bg-background px-1 py-1 text-sm">
+          <Badge variant="secondary" className="mr-2 rounded-full px-2 font-normal">
+            New Release
+          </Badge>
+          Get started with our new product release today
+          <ArrowRight className="mr-2 ml-2 h-4 w-4" />
+        </div>
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+                Marketing <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">made simple</span>
+                <br />
+                for small businesses.
+              </h1>
+              <p className="mx-auto mb-8 max-w-[700px] text-muted-foreground md:text-xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia possimus fugit ab cumque
+          consequuntur pariatur provident? Nulla consequuntur nisi eum!
+        </p>
+        <div className="mb-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <Button size="lg" className="w-full sm:w-auto">
+            Get Started
+          </Button>
+          <Button size="lg" variant="outline" className="w-full sm:w-auto">
+            <Play className="mr-2 h-4 w-4" /> Watch Demo
+          </Button>
+        </div>
+              <div className="space-y-4 pt-20">
+                <h2 className="text-base font-medium text-stone-600">Trusted by these six companies so far</h2>
+                <div className="flex flex-wrap justify-center items-center gap-12">
+                  {[
+                   { name: "Proline", logo: "/img/logos/proline.webp" },
+                   { name: "InnovateX", logo: "/img/logos/vertigo.webp" },
+                   { name: "DataDrive", logo: "/img/logos/vimeo.webp" },
+                   { name: "Webflow", logo: "/img/logos/webflow.webp" },
+                   { name: "TechCorp", logo: "/img/logos/behance.webp" },
+                   { name: "SmartSystems", logo: "/img/logos/envanto.webp" },
+                   { name: "GlobalSolutions", logo: "/img/logos/minty.webp" },
+                  ].map((company) => (
+                    <div key={company.name} className="flex items-center justify-center">
+                      <Image
+                        src={company.logo}
+                        alt={`${company.name} logo`}
+                        width={120}
+                        height={60}
+                        className="max-w-[120px] max-h-[60px] object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <main className="flex-1">
           <section className="mb-12">
@@ -22,6 +82,54 @@ export default function LandingPage() {
               </Button>
             </div>
           </section>
+
+                  {/* Section 3: Trusted Partners */}
+        <section className="py-20">
+          <div className="container mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-4">Trusted by Industry Leaders</h2>
+            <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+              We&apos;re proud to collaborate with forward-thinking companies that are shaping the future of technology and innovation. Our partnerships drive mutual growth and success.
+            </p>
+
+        <Company/>
+          </div>
+        </section>
+
+        {/* Barner Section */}
+        <div className="min-h-screen bg-white">
+          <div className="mx-auto max-w-[1200px] px-4 py-12 sm:px-6 lg:px-8">
+            <Card className="mt-16 bg-gray-50 overflow-hidden">
+              <div className="flex flex-col lg:flex-row">
+                <div className="p-8 lg:p-12 lg:w-1/2">
+                  <p className="text-sm font-medium text-gray-600 mb-4">Modern Tactics</p>
+                  <h2 className="text-4xl font-bold text-gray-900 mb-4">Make your site a true standout.</h2>
+                  <p className="text-gray-600 mb-8">
+                    Discover new web trends that help you craft sleek, highly functional sites that drive traffic and convert leads into customers.
+                  </p>
+                  <Button className="bg-gray-900 text-white hover:bg-gray-800">
+                    See Plans
+                    <span className="sr-only">, opens pricing page</span>
+                  </Button>
+                </div>
+                <div className="lg:w-1/2 bg-gray-200 flex items-center justify-center p-12">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-32 h-32 text-gray-400"
+                  >
+                    <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                    <polyline points="2 17 12 22 22 17" />
+                    <polyline points="2 12 12 17 22 12" />
+                  </svg>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
 
           <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
@@ -60,6 +168,50 @@ export default function LandingPage() {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
+            </div>
+          </div>
+        </section>
+
+        
+        <section id="testimonials" className="w-full py-4 md:py-4 lg:py-4">
+          <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid gap-6 lg:grid-cols-3">
+              <Card>
+                <CardContent className="pt-4">
+                  <p className="mb-4">&quot;SEO Master transformed our online presence. Our organic traffic has increased by 200% in just 3 months!&quot;</p>
+                  <div className="flex items-center">
+                    <Avatar className="h-10 w-10 mr-3">
+                      <AvatarImage src="/img/authors/08.jpg?height=40&width=40" alt="John Doe" />
+                      <AvatarFallback>JD</AvatarFallback>
+                    </Avatar>
+                    <p className="font-semibold">John Doe — TechStart</p>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="pt-4">
+                  <p className="mb-4">&quot;The insights provided by SEO Master helped us refine our content strategy and boost our rankings significantly.&quot;</p>
+                  <div className="flex items-center">
+                    <Avatar className="h-10 w-10 mr-3">
+                      <AvatarImage src="/img/authors/07.webp?height=40&width=40" alt="Jane Smith" />
+                      <AvatarFallback>JS</AvatarFallback>
+                    </Avatar>
+                    <p className="font-semibold">Jane Smith — GrowFast</p>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="pt-4">
+                  <p className="mb-4">&quot;We&apos;ve seen a 150% increase in lead generation since implementing SEO Master&apos;s recommendations.&quot;</p>
+                  <div className="flex items-center">
+                    <Avatar className="h-10 w-10 mr-3">
+                      <AvatarImage src="/img/authors/06.png?height=40&width=40" alt="Mike Johnson" />
+                      <AvatarFallback>MJ</AvatarFallback>
+                    </Avatar>
+                    <p className="font-semibold">Mike Johnson — Glassdoor</p>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
