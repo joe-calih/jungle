@@ -92,6 +92,22 @@ export default function Home() {
         <Feature/>
         <BlogSection/>
 
+        <section id="process" className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Our SEO Process</h2>
+          <ol className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {['Audit & Analysis', 'Strategy Development', 'Implementation', 'Monitoring & Reporting'].map((step, index) => (
+              <li key={step} className="flex items-start">
+                <span className="flex items-center justify-center bg-primary text-primary-foreground rounded-full w-8 h-8 mr-4 flex-shrink-0">
+                  {index + 1}
+                </span>
+                <div>
+                  <h3 className="font-semibold text-lg mb-2">{step}</h3>
+                  <p className="text-gray-600">We follow a proven process to ensure your SEO success.</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </section>
 
         <section id="pricing" className="py-12 bg-secondary">
           <div className="container mx-auto max-w-[1200px] px-4">

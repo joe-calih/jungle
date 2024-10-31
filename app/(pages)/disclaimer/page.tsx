@@ -188,6 +188,7 @@ export default function LandingPage() {
                   </div>
                 </CardContent>
               </Card>
+              
               <Card>
                 <CardContent className="pt-4">
                   <p className="mb-4">&quot;The insights provided by SEO Master helped us refine our content strategy and boost our rankings significantly.&quot;</p>
