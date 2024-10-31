@@ -92,7 +92,7 @@ export default function Home() {
         <Feature/>
         <BlogSection/>
 
-        <section id="process" className="mb-16">
+        <section id="process" className="container mx-auto max-w-[1200px] px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Our SEO Process</h2>
           <ol className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {['Audit & Analysis', 'Strategy Development', 'Implementation', 'Monitoring & Reporting'].map((step, index) => (
