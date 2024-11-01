@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-
+import Steps from "@/components/Steps";
 import Pricecard from "@/components/PriceCards";
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
@@ -132,7 +132,7 @@ export default function SEOLandingPage() {
           </div>
         </div>
       </section>
-
+<Steps/>
 <Pricecard/>
 <section className="w-full bg-white py-12 md:py-16">
       <div className="mx-auto max-w-[1200px] px-4 md:px-6">
