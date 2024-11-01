@@ -49,7 +49,7 @@ export default function SinglePostPage() {
       title: "React Performance Optimization",
       excerpt: "Learn techniques to optimize your React applications for better performance.",
       date: "2023-05-05",
-      image: "/img/apple.webp?height=300&width=500&text=React+Performance",
+      image: "/img/chatgpt.webp?height=300&width=500&text=React+Performance",
       readingTime: "12 min",
       views: 4567,
       category: "React",
@@ -75,7 +75,7 @@ export default function SinglePostPage() {
           className="brightness-50"
         />
         <div className="absolute inset-0 flex flex-col justify-end p-8">
-          <div className="max-w-6xl mx-auto w-full">
+          <div className="max-w-[1200px]  mx-auto w-full">
             <h1 className="text-4xl font-bold mb-4 text-white">{currentPost.title}</h1>
             <div className="flex flex-wrap items-center gap-4 text-white">
               <div className="flex items-center gap-2">
@@ -88,7 +88,7 @@ export default function SinglePostPage() {
               <Separator orientation="vertical" className="h-6 bg-white/50" />
               <span>{currentPost.date}</span>
               <Separator orientation="vertical" className="h-6 bg-white/50" />
-              <Badge variant="secondary">{currentPost.category}</Badge>
+              <Badge variant="secondary" className="rounded-full">{currentPost.category}</Badge>
               <Separator orientation="vertical" className="h-6 bg-white/50" />
               <span className="flex items-center gap-1">
                 <Clock className="w-4 h-4" />
@@ -104,7 +104,7 @@ export default function SinglePostPage() {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 py-8">
+      <div className="max-w-[1230px] mx-auto px-4 py-8">
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Main Content */}
           <main className="flex-grow lg:w-[70%]">
@@ -191,7 +191,7 @@ export default function SinglePostPage() {
                       <CardTitle className="mb-2">{post.title}</CardTitle>
                       <p className="text-sm text-muted-foreground mb-2">{post.date}</p>
                       <p className="mb-4">{post.excerpt}</p>
-                      <Badge variant="secondary">{post.category}</Badge>
+                      <Badge variant="secondary" className="rounded-full">{post.category}</Badge>
                     </CardContent>
                     <CardFooter className="flex justify-between">
                       <span className="flex items-center gap-1 text-sm text-muted-foreground">
