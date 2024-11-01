@@ -1,11 +1,9 @@
-import { Card } from "@/components/ui/card"
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { Link } from "lucide-react"
 
 export default function PrivacyPolicy() {
   return (
