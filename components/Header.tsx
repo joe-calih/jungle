@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/navigation-menu"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Heart, Star, Search } from 'lucide-react'
+import { Heart, Star, Search, Sparkles, Box, LayoutGrid, LineChart, Monitor, Settings, Shapes } from 'lucide-react'
 
 export default function Header() {
   return (
@@ -63,37 +63,96 @@ export default function Header() {
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-sm px-3 py-2 rounded-full hover:bg-secondary transition-colors">Solutions</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
-                    <li className="row-span-3">
+                <div className="grid grid-cols-2 gap-8 p-6 w-[800px]">
+                  <div>
+                    <h4 className="text-sm font-medium leading-none mb-4 text-muted-foreground">Use Cases</h4>
+                    <div className="grid gap-4">
                       <NavigationMenuLink asChild>
-                        <Link
-                          className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                          href="/services"
-                        >
-                          <div className="mb-2 mt-4 text-lg font-medium">
-                           Image Services
+                        <a href="#" className="group grid grid-cols-[40px_1fr] items-start gap-4 p-2 hover:bg-muted rounded-md">
+                          <div className="flex items-center justify-center size-10 rounded-md bg-muted">
+                            <Sparkles className="size-5 text-foreground" />
                           </div>
-                          <p className="text-sm leading-tight text-muted-foreground">
-                            Powerful image editing and manipulation tools at your fingertips.
-                          </p>
-                        </Link>
+                          <div>
+                            <div className="text-sm font-medium mb-1">AI Apps</div>
+                            <p className="text-sm text-muted-foreground">Deploy at the speed of AI</p>
+                          </div>
+                        </a>
                       </NavigationMenuLink>
-                    </li>
-                    <ListItem href="/services/photo-effects" title="Photo Effects">
-                      Enhance your images with our wide range of photo effects.
-                    </ListItem>
-                    <ListItem href="/services/photo-filters" title="Photo Filters">
-                      Apply professional-grade filters to transform your photos.
-                    </ListItem>
-                    <ListItem href="/services/tools" title="Tools">
-                      Access our suite of image editing and manipulation tools.
-                    </ListItem>
-                    <ListItem href="/services/tools" title="Tools">
-                    <Image src="/placeholder.svg?height=40&width=40" alt="Next.js" width={40} height={40} className="mr-2" />
-                    <span>Next.js</span>
-                    </ListItem>
-                  </ul>
-                </NavigationMenuContent>
+                      <NavigationMenuLink asChild>
+                        <a href="#" className="group grid grid-cols-[40px_1fr] items-start gap-4 p-2 hover:bg-muted rounded-md">
+                          <div className="flex items-center justify-center size-10 rounded-md bg-muted">
+                            <Box className="size-5 text-foreground" />
+                          </div>
+                          <div>
+                            <div className="text-sm font-medium mb-1">Composable Commerce</div>
+                            <p className="text-sm text-muted-foreground">Power storefronts that convert</p>
+                          </div>
+                        </a>
+                      </NavigationMenuLink>
+                      <NavigationMenuLink asChild>
+                        <a href="#" className="group grid grid-cols-[40px_1fr] items-start gap-4 p-2 hover:bg-muted rounded-md">
+                          <div className="flex items-center justify-center size-10 rounded-md bg-muted">
+                            <LineChart className="size-5 text-foreground" />
+                          </div>
+                          <div>
+                            <div className="text-sm font-medium mb-1">Marketing Sites</div>
+                            <p className="text-sm text-muted-foreground">Launch campaigns fast</p>
+                          </div>
+                        </a>
+                      </NavigationMenuLink>
+                      <NavigationMenuLink asChild>
+                        <a href="#" className="group grid grid-cols-[40px_1fr] items-start gap-4 p-2 hover:bg-muted rounded-md">
+                          <div className="flex items-center justify-center size-10 rounded-md bg-muted">
+                            <LayoutGrid className="size-5 text-foreground" />
+                          </div>
+                          <div>
+                            <div className="text-sm font-medium mb-1">Multi-tenant Platforms</div>
+                            <p className="text-sm text-muted-foreground">Scale apps with one codebase</p>
+                          </div>
+                        </a>
+                      </NavigationMenuLink>
+                      <NavigationMenuLink asChild>
+                        <a href="#" className="group grid grid-cols-[40px_1fr] items-start gap-4 p-2 hover:bg-muted rounded-md">
+                          <div className="flex items-center justify-center size-10 rounded-md bg-muted">
+                            <Monitor className="size-5 text-foreground" />
+                          </div>
+                          <div>
+                            <div className="text-sm font-medium mb-1">Web Apps</div>
+                            <p className="text-sm text-muted-foreground">Ship features, not infrastructure</p>
+                          </div>
+                        </a>
+                      </NavigationMenuLink>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-medium leading-none mb-4 text-muted-foreground">Users</h4>
+                    <div className="grid gap-4">
+                      <NavigationMenuLink asChild>
+                        <a href="#" className="group grid grid-cols-[40px_1fr] items-start gap-4 p-2 hover:bg-muted rounded-md">
+                          <div className="flex items-center justify-center size-10 rounded-md bg-muted">
+                            <Settings className="size-5 text-foreground" />
+                          </div>
+                          <div>
+                            <div className="text-sm font-medium mb-1">Platform Engineers</div>
+                            <p className="text-sm text-muted-foreground">Automate away repetition</p>
+                          </div>
+                        </a>
+                      </NavigationMenuLink>
+                      <NavigationMenuLink asChild>
+                        <a href="#" className="group grid grid-cols-[40px_1fr] items-start gap-4 p-2 hover:bg-muted rounded-md">
+                          <div className="flex items-center justify-center size-10 rounded-md bg-muted">
+                            <Shapes className="size-5 text-foreground" />
+                          </div>
+                          <div>
+                            <div className="text-sm font-medium mb-1">Design Engineers</div>
+                            <p className="text-sm text-muted-foreground">Deploy for every idea</p>
+                          </div>
+                        </a>
+                      </NavigationMenuLink>
+                    </div>
+                  </div>
+                </div>
+              </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-sm px-3 py-2 rounded-full hover:bg-secondary transition-colors">Resources</NavigationMenuTrigger>
