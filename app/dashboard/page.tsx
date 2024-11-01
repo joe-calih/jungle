@@ -88,7 +88,7 @@ export default function SinglePostPage() {
               <Separator orientation="vertical" className="h-6 bg-white/50" />
               <span>{currentPost.date}</span>
               <Separator orientation="vertical" className="h-6 bg-white/50" />
-              <Badge variant="secondary" className="rounded-full">{currentPost.category}</Badge>
+              <span className="rounded-full">{currentPost.category}</span>
               <Separator orientation="vertical" className="h-6 bg-white/50" />
               <span className="flex items-center gap-1">
                 <Clock className="w-4 h-4" />

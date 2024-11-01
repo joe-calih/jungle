@@ -320,7 +320,7 @@ export default function Home() {
 
         
 {/* Newsletter */}
-<section className="border-t py-12">
+<section className="border-t py-12 border-b">
   <div className="max-w-[1200px] mx-auto px-4">
     <div className="flex items-center gap-6">
       <div className="h-12 w-12 rounded-full bg-primary flex items-center justify-center">
