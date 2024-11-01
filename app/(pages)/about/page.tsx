@@ -2,6 +2,8 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+
+import Pricecard from "@/components/PriceCards";
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -11,7 +13,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Badge } from "@/components/ui/badge"
 import { Skeleton } from "@/components/ui/skeleton"
-import { Search, BarChart2, Globe, Target, PenTool, Users, Mail, ArrowRight } from 'lucide-react'
+import { Search, BarChart2, Globe, Target, PenTool, Users, Mail, ArrowRight, Tag } from 'lucide-react'
 
 export default function SEOLandingPage() {
   const [activeTab, setActiveTab] = useState('content')
@@ -130,6 +132,58 @@ export default function SEOLandingPage() {
           </div>
         </div>
       </section>
+
+<Pricecard/>
+<section className="w-full bg-white py-12 md:py-16">
+      <div className="mx-auto max-w-[1200px] px-4 md:px-6">
+        <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
+          <div className="flex flex-col justify-center space-y-6">
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold tracking-tight">
+                Upwork Chat Pro
+              </h3>
+              <h2 className="text-3xl font-medium tracking-tight sm:text-4xl">
+                Use AI to do your work faster.
+                <br />
+                Generate ideas, draft content, and
+                <br />
+                more with Uma and GPT-4o.
+              </h2>
+            </div>
+            <div className="flex flex-col gap-4 sm:flex-row">
+              <Button
+                size="lg"
+                className="bg-[#14A800] text-white hover:bg-[#14A800]/90"
+              >
+                Get Upwork Chat Pro
+              </Button>
+              <Button
+                variant="link"
+                size="lg"
+                className="text-[#14A800] hover:text-[#14A800]/90"
+              >
+                Learn more
+              </Button>
+            </div>
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <Tag className="h-4 w-4" />
+              <span>Included with Freelancer Plus ($20/month)</span>
+            </div>
+          </div>
+          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl lg:aspect-auto">
+            <Image
+              src="/placeholder.svg?height=600&width=800"
+              alt="Upwork Chat Pro interface preview"
+              width={800}
+              height={600}
+              className="h-full w-full object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#14A800]/20 to-[#14A800]/40" />
+          </div>
+        </div>
+      </div>
+    </section>
 
       {/* Keyword Research Section */}
       <section className="py-20 bg-muted">

@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/navigation-menu"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Heart, Star, Search, Sparkles, Box, LayoutGrid, LineChart, Monitor, Settings, Shapes } from 'lucide-react'
+import { Heart, Star, Search, Sparkles, Box, LayoutGrid, LineChart, Monitor, Settings, Shapes, BarChart, Code, FileText, Paintbrush, PieChart, Plug, Users } from 'lucide-react'
 
 export default function Header() {
   return (
@@ -69,8 +69,8 @@ export default function Header() {
                     <div className="grid gap-4">
                       <NavigationMenuLink asChild>
                         <a href="#" className="group grid grid-cols-[40px_1fr] items-start gap-4 p-2 hover:bg-muted rounded-md">
-                          <div className="flex items-center justify-center size-10 rounded-md bg-muted">
-                            <Sparkles className="size-5 text-foreground" />
+                          <div className="flex items-center justify-center size-10 rounded-md bg-purple-50">
+                            <Sparkles className="size-5 text-purple-500" />
                           </div>
                           <div>
                             <div className="text-sm font-medium mb-1">AI Apps</div>
@@ -80,8 +80,8 @@ export default function Header() {
                       </NavigationMenuLink>
                       <NavigationMenuLink asChild>
                         <a href="#" className="group grid grid-cols-[40px_1fr] items-start gap-4 p-2 hover:bg-muted rounded-md">
-                          <div className="flex items-center justify-center size-10 rounded-md bg-muted">
-                            <Box className="size-5 text-foreground" />
+                          <div className="flex items-center justify-center size-10 rounded-md bg-pink-50">
+                            <Box className="size-5 text-pink-500" />
                           </div>
                           <div>
                             <div className="text-sm font-medium mb-1">Composable Commerce</div>
@@ -91,8 +91,8 @@ export default function Header() {
                       </NavigationMenuLink>
                       <NavigationMenuLink asChild>
                         <a href="#" className="group grid grid-cols-[40px_1fr] items-start gap-4 p-2 hover:bg-muted rounded-md">
-                          <div className="flex items-center justify-center size-10 rounded-md bg-muted">
-                            <LineChart className="size-5 text-foreground" />
+                          <div className="flex items-center justify-center size-10 rounded-md bg-green-50">
+                            <LineChart className="size-5 text-green-500" />
                           </div>
                           <div>
                             <div className="text-sm font-medium mb-1">Marketing Sites</div>
@@ -102,8 +102,8 @@ export default function Header() {
                       </NavigationMenuLink>
                       <NavigationMenuLink asChild>
                         <a href="#" className="group grid grid-cols-[40px_1fr] items-start gap-4 p-2 hover:bg-muted rounded-md">
-                          <div className="flex items-center justify-center size-10 rounded-md bg-muted">
-                            <LayoutGrid className="size-5 text-foreground" />
+                          <div className="flex items-center justify-center size-10 rounded-md bg-blue-50">
+                            <LayoutGrid className="size-5 text-blue-500" />
                           </div>
                           <div>
                             <div className="text-sm font-medium mb-1">Multi-tenant Platforms</div>
@@ -113,8 +113,8 @@ export default function Header() {
                       </NavigationMenuLink>
                       <NavigationMenuLink asChild>
                         <a href="#" className="group grid grid-cols-[40px_1fr] items-start gap-4 p-2 hover:bg-muted rounded-md">
-                          <div className="flex items-center justify-center size-10 rounded-md bg-muted">
-                            <Monitor className="size-5 text-foreground" />
+                          <div className="flex items-center justify-center size-10 rounded-md bg-orange-50">
+                            <Monitor className="size-5 text-orange-500" />
                           </div>
                           <div>
                             <div className="text-sm font-medium mb-1">Web Apps</div>
@@ -129,8 +129,8 @@ export default function Header() {
                     <div className="grid gap-4">
                       <NavigationMenuLink asChild>
                         <a href="#" className="group grid grid-cols-[40px_1fr] items-start gap-4 p-2 hover:bg-muted rounded-md">
-                          <div className="flex items-center justify-center size-10 rounded-md bg-muted">
-                            <Settings className="size-5 text-foreground" />
+                          <div className="flex items-center justify-center size-10 rounded-md bg-sky-50">
+                            <Settings className="size-5 text-sky-500" />
                           </div>
                           <div>
                             <div className="text-sm font-medium mb-1">Platform Engineers</div>
@@ -140,8 +140,8 @@ export default function Header() {
                       </NavigationMenuLink>
                       <NavigationMenuLink asChild>
                         <a href="#" className="group grid grid-cols-[40px_1fr] items-start gap-4 p-2 hover:bg-muted rounded-md">
-                          <div className="flex items-center justify-center size-10 rounded-md bg-muted">
-                            <Shapes className="size-5 text-foreground" />
+                          <div className="flex items-center justify-center size-10 rounded-md bg-indigo-50">
+                            <Shapes className="size-5 text-indigo-500" />
                           </div>
                           <div>
                             <div className="text-sm font-medium mb-1">Design Engineers</div>
@@ -265,15 +265,101 @@ export default function Header() {
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem className="text-sm rounded-full transition-colors">
-                <Link href="/company" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Company
-                  </NavigationMenuLink>
-                </Link>
+              <NavigationMenuTrigger className="text-sm px-3 py-2 rounded-full transition-colors">Company</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                <div className="grid gap-6 w-[600px]">
+                  <div className="grid grid-cols-2 p-4 gap-4">
+                    <NavigationMenuLink asChild>
+                      <a href="#" className="group grid grid-cols-[40px_1fr] items-start gap-4 p-2 hover:bg-muted rounded-md">
+                        <div className="flex items-center justify-center size-10 rounded-md bg-purple-50">
+                          <FileText className="size-5 text-purple-500" />
+                        </div>
+                        <div>
+                          <div className="text-sm font-medium mb-1">Automated Reports</div>
+                          <p className="text-sm text-muted-foreground">Put your reporting on autopilot</p>
+                        </div>
+                      </a>
+                    </NavigationMenuLink>
+                    
+                    <NavigationMenuLink asChild>
+                      <a href="#" className="group grid grid-cols-[40px_1fr] items-start gap-4 p-2 hover:bg-muted rounded-md">
+                        <div className="flex items-center justify-center size-10 rounded-md bg-pink-50">
+                          <PieChart className="size-5 text-pink-500" />
+                        </div>
+                        <div>
+                          <div className="text-sm font-medium mb-1">Custom Dashboards</div>
+                          <p className="text-sm text-muted-foreground">Fully customizable client dashboards</p>
+                        </div>
+                      </a>
+                    </NavigationMenuLink>
+                    
+                    <NavigationMenuLink asChild>
+                      <a href="#" className="group grid grid-cols-[40px_1fr] items-start gap-4 p-2 hover:bg-muted rounded-md">
+                        <div className="flex items-center justify-center size-10 rounded-md bg-green-50">
+                          <Paintbrush className="size-5 text-green-500" />
+                        </div>
+                        <div>
+                          <div className="text-sm font-medium mb-1">White Label</div>
+                          <p className="text-sm text-muted-foreground">Add your own logo & branding</p>
+                        </div>
+                      </a>
+                    </NavigationMenuLink>
+                    
+                    <NavigationMenuLink asChild>
+                      <a href="#" className="group grid grid-cols-[40px_1fr] items-start gap-4 p-2 hover:bg-muted rounded-md">
+                        <div className="flex items-center justify-center size-10 rounded-md bg-blue-50">
+                          <Users className="size-5 text-blue-500" />
+                        </div>
+                        <div>
+                          <div className="text-sm font-medium mb-1">Client & Staff Management</div>
+                          <p className="text-sm text-muted-foreground">Manage team & user activity</p>
+                        </div>
+                      </a>
+                    </NavigationMenuLink>
+                    
+                    <NavigationMenuLink asChild>
+                      <a href="#" className="group grid grid-cols-[40px_1fr] items-start gap-4 p-2 hover:bg-muted rounded-md">
+                        <div className="flex items-center justify-center size-10 rounded-md bg-orange-50">
+                          <Code className="size-5 text-orange-500" />
+                        </div>
+                        <div>
+                          <div className="text-sm font-medium mb-1">SEO Tools</div>
+                          <p className="text-sm text-muted-foreground">Rankings, site audits & more</p>
+                        </div>
+                      </a>
+                    </NavigationMenuLink>
+                    
+                    <NavigationMenuLink asChild>
+                      <a href="#" className="group grid grid-cols-[40px_1fr] items-start gap-4 p-2 hover:bg-muted rounded-md">
+                        <div className="flex items-center justify-center size-10 rounded-md bg-sky-50">
+                          <Plug className="size-5 text-sky-500" />
+                        </div>
+                        <div>
+                          <div className="text-sm font-medium mb-1">80+ Integrations</div>
+                          <p className="text-sm text-muted-foreground">Connect all your clients data</p>
+                        </div>
+                      </a>
+                    </NavigationMenuLink>
+                  </div>
+                  
+                  <div className="grid grid-cols-[1fr_auto] items-center gap-4 p-6">
+                    <div className="grid grid-cols-[40px_1fr] items-start gap-4">
+                      <div className="flex items-center justify-center size-10 rounded-md bg-blue-50">
+                        <BarChart className="size-5 text-blue-500" />
+                      </div>
+                      <div>
+                        <div className="text-sm font-medium mb-1">Automated Reporting for Marketing Agencies</div>
+                        <p className="text-sm text-muted-foreground">Discover our full suite of features</p>
+                      </div>
+                    </div>
+                    <Button variant="outline" className="text-primary">See All Features</Button>
+                  </div>
+                </div>
+              </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <Link href="/blog" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()} >
                     Enterprise
                   </NavigationMenuLink>
                 </Link>

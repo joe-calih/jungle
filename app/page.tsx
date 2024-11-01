@@ -317,6 +317,7 @@ export default function Home() {
             </Accordion>
           </div>
         </section>
+        
 
         
 {/* Newsletter */}
