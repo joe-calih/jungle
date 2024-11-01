@@ -5,16 +5,27 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { Link } from "lucide-react"
 
 export default function PrivacyPolicy() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-100 to-gray-200 py-12 px-4">
-      <Card className="mx-auto max-w-[1170px] p-8">
-        <h1 className="mb-6 text-3xl font-bold">Privacy Policy</h1>
-        <p className="mb-6 text-sm text-muted-foreground">
-          Last updated: {new Date().toLocaleDateString()}
-        </p>
-        <Accordion type="single" collapsible className="w-full">
+    
+    <div className="min-h-screen bg-background">
+ {/* Breadcrumb */}
+ <div className="border-b">
+ <div className="max-w-[1300px] mx-auto px-4 py-2">
+   <div className="flex items-center gap-2 text-sm text-muted-foreground">
+   <span className="text-foreground">Home</span>
+     <span>/</span>
+     Last updated: {new Date().toLocaleDateString()}
+     <span>/</span>
+     <span className="text-foreground">Privacy Policy</span>
+   </div>
+ </div>
+</div>
+
+        <h1 className="mb-6 text-3xl font-bold mx-auto max-w-[1170px] p-x-8 pt-8">Privacy Policy</h1>
+        <Accordion type="single" collapsible className="mx-auto max-w-[1170px] p-8">
           <AccordionItem value="item-1">
             <AccordionTrigger>1. Introduction</AccordionTrigger>
             <AccordionContent>
@@ -131,7 +142,6 @@ export default function PrivacyPolicy() {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-      </Card>
     </div>
   )
 }

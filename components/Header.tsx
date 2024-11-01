@@ -25,9 +25,9 @@ export default function Header() {
             <span className="hidden font-bold sm:inline-block">Semdeals</span>
           </Link>
           <NavigationMenu>
-            <NavigationMenuList>
+            <NavigationMenuList className="px-3 py-2">
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Features</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="text-sm px-3 py-2 rounded-full hover:bg-secondary transition-colors">Features</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                     <li className="row-span-3">
@@ -58,9 +58,10 @@ export default function Header() {
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
+              
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="text-sm px-3 py-2 rounded-full hover:bg-secondary transition-colors">Solutions</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
                     <li className="row-span-3">
@@ -87,11 +88,15 @@ export default function Header() {
                     <ListItem href="/services/tools" title="Tools">
                       Access our suite of image editing and manipulation tools.
                     </ListItem>
+                    <ListItem href="/services/tools" title="Tools">
+                    <Image src="/placeholder.svg?height=40&width=40" alt="Next.js" width={40} height={40} className="mr-2" />
+                    <span>Next.js</span>
+                    </ListItem>
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="text-sm px-3 py-2 rounded-full hover:bg-secondary transition-colors">Resources</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
                     <ListItem href="/resources/blog" title="Blog">
@@ -116,7 +121,7 @@ export default function Header() {
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Services</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="text-sm px-3 py-2 rounded-full hover:bg-secondary transition-colors">Services</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="grid grid-cols-4 gap-3 p-6 md:w-[800px]">
                     <ul className="space-y-2">
@@ -182,7 +187,7 @@ export default function Header() {
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Pricing</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="text-sm px-3 py-2 rounded-full transition-colors">Pricing</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
                     <ListItem href="/pricing/basic" title="Basic Plan">
@@ -200,7 +205,7 @@ export default function Header() {
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
-              <NavigationMenuItem>
+              <NavigationMenuItem className="text-sm rounded-full transition-colors">
                 <Link href="/company" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Company
@@ -208,7 +213,7 @@ export default function Header() {
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="/enterprise" legacyBehavior passHref>
+                <Link href="/blog" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Enterprise
                   </NavigationMenuLink>

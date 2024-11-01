@@ -19,6 +19,14 @@ export default function Component() {
     { type: 'dots', count: 100 },
   ]
 
+  const faqs = [
+    { question: "What topics does this blog cover?", answer: "Our blog covers a wide range of web development topics, including React, TypeScript, CSS, JavaScript, and Node.js." },
+    { question: "How often is new content published?", answer: "We publish new articles twice a week, typically on Tuesdays and Thursdays." },
+    { question: "Can I contribute to the blog?", answer: "Yes! We welcome guest contributions. Please check our 'Write for Us' page for more information on how to submit your articles." },
+    { question: "How can I stay updated with new posts?", answer: "You can subscribe to our newsletter or follow us on social media to get notified about new posts." },
+  ]
+
+
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
@@ -383,6 +391,7 @@ export default function Component() {
             </div>
           </div>
         </section>
+
 
         {/* Local SEO Tools */}
         <section className="w-full py-12 md:py-24 lg:py-32">
@@ -834,6 +843,30 @@ export default function Component() {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
+          </div>
+        </section>
+
+
+
+          {/* FAQ Section */}
+          <section className="mt-16">
+          <div className="container mx-auto px-4 md:px-6 max-w-[1200px]">
+          <h2 className="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+          <div className="flex flex-col lg:flex-row gap-8 items-center">
+            <div className="lg:w-1/2">
+              <Image src="/img/landing/1.webp?height=400&width=600&text=FAQ+Image" alt="FAQ Illustration" width={600} height={400} className="rounded-lg" />
+            </div>
+            <div className="lg:w-1/2">
+              <Accordion type="single" collapsible className="w-full">
+                {faqs.map((faq, index) => (
+                  <AccordionItem key={index} value={`item-${index}`}>
+                    <AccordionTrigger>{faq.question}</AccordionTrigger>
+                    <AccordionContent>{faq.answer}</AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+          </div>
           </div>
         </section>
 

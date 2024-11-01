@@ -27,6 +27,7 @@ export default function CategoryFilter({ categories, selectedCategory }: Categor
           variant={category === selectedCategory ? "default" : "outline"} 
           size="sm"
           onClick={() => handleCategoryClick(category)}
+          className="rounded-full hover:shadow-sm transition-shadow duration-300"
         >
           {category}
         </Button>

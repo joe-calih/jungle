@@ -37,6 +37,7 @@ export default function Pagination({ currentPage, totalPages, searchParams }: Pa
         variant="outline"
         disabled={currentPage === 1}
         asChild
+        className="hover:shadow-lg hover:bg-color-white transition-shadow duration-300"
       >
         <Link href={createPageUrl(currentPage - 1)}>
           <ChevronLeft className="h-4 w-4 mr-2" />
@@ -50,6 +51,7 @@ export default function Pagination({ currentPage, totalPages, searchParams }: Pa
         variant="outline"
         disabled={currentPage === totalPages}
         asChild
+        className="hover:shadow-lg hover:bg-color-white transition-shadow duration-300"
       >
         <Link href={createPageUrl(currentPage + 1)}>
           Next
