@@ -3,6 +3,8 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Integration from "@/components/Integration";
+import Checklist from "@/components/Checklist";
+import CoreValues from "@/components/CoreValues";
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -132,6 +134,8 @@ export default function SEOLandingPage() {
         </div>
       </section>
       <Integration/>
+      <CoreValues/>
+      <Checklist/>
 <section className="w-full bg-white py-12 md:py-16">
       <div className="mx-auto max-w-[1200px] px-4 md:px-6">
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
