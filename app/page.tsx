@@ -2,6 +2,8 @@ import Image from 'next/image'
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import Feature from "@/components/Feature";
+import Steps from "@/components/Steps";
+import Pricecard from "@/components/PriceCards";
 import BlogSection from "@/components/BlogSec";
 import {
   Accordion,
@@ -150,6 +152,8 @@ export default function Home() {
 
         <Feature/>
         <BlogSection/>
+        <Steps/>
+        <Pricecard/>
 
         <section id="process" className="container mx-auto max-w-[1200px] px-4 py-10">
           <ol className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
