@@ -61,7 +61,7 @@ export default function Component() {
           </path>
         </svg>
       </div>
-      <div className="mx-auto max-w-[1200px] px-4 py-16 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1300px] px-4 py-16 sm:px-6 lg:px-8">
         <div className="relative z-10 grid gap-12 lg:grid-cols-3">
           <div className="space-y-6 lg:col-span-1">
             <h2 className="text-4xl font-bold tracking-tighter text-primary sm:text-5xl xl:text-6xl/none">
