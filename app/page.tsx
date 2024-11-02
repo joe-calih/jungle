@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import CoreValues from "@/components/CoreValues";
 import Feature from "@/components/Feature";
 import Steps from "@/components/Steps";
 import Pricecard from "@/components/PriceCards";
@@ -150,6 +151,7 @@ export default function Home() {
   </div>
 </section>
 
+        <CoreValues/>
         <Feature/>
         <BlogSection/>
         <Steps/>
