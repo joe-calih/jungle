@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -37,7 +36,7 @@ export default function Component() {
           <ArrowRight className="h-4 w-4" />
         </Link>
         <div className="grid max-w-5xl grid-cols-3 gap-6 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6">
-          {integrations.map((integration, index) => (
+          {integrations.map((integration) => (
             <div
               key={integration.name}
               className={`flex aspect-square items-center justify-center rounded-full ${integration.bgColor} p-4`}
