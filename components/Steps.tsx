@@ -24,8 +24,8 @@ export default function Component() {
   ]
 
   return (
-    <section className="w-full bg-white py-12 md:py-24">
-      <div className="mx-auto max-w-[1230px] px-4 md:px-6">
+    <section className="w-full bg-white py-12 md:py-24 border-t">
+      <div className="mx-auto max-w-[1250px] px-4 md:px-6">
         <div className="grid gap-12 lg:grid-cols-2">
           <div className="flex flex-col justify-center space-y-6">
             <Badge className="w-fit bg-primary/10 text-primary rounded-full" variant="secondary">

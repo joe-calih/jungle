@@ -27,47 +27,47 @@ export default function Header() {
           <NavigationMenu>
             <NavigationMenuList className="px-3 py-2">
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-[15px] px-3 py-2 rounded-full hover:bg-secondary transition-colors">Features</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="text-base px-3 py-2 rounded-full hover:bg-secondary transition-colors">Features</NavigationMenuTrigger>
                 <NavigationMenuContent>
                         <div className="w-[1010px] flex flex-col items-center">
                           <div className="max-w-[1200px] mx-auto p-6">
                             <div className="grid grid-cols-4 gap-8">
                               <div>
-                                <h3 className="font-semibold text-[15px] mb-4">Content Writing</h3>
+                                <h3 className="font-semibold text-base mb-4">Content Writing</h3>
                                 <nav className="flex flex-col space-y-3">
-                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
                                     Articles & Blog Posts
                                   </Link>
                                   <div className="flex items-center space-x-2">
-                                    <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
+                                    <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
                                       Content Strategy
                                     </Link>
                                     <Badge variant="secondary" className="bg-pink-100 text-pink-800">
                                       NEW
                                     </Badge>
                                   </div>
-                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
                                     Website Content
                                   </Link>
-                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
                                     Scriptwriting
                                   </Link>
                                 </nav>
                               </div>
 
                               <div>
-                                <h3 className="font-semibold text-[15px] mb-4">Book & eBook Publishing</h3>
+                                <h3 className="font-semibold text-base mb-4">Book & eBook Publishing</h3>
                                 <nav className="flex flex-col space-y-3">
-                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
                                     Book & eBook Writing
                                   </Link>
-                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
                                     Book Editing
                                   </Link>
-                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
                                     Beta Reading
                                   </Link>
-                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900 flex items-center">
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900 flex items-center">
                                     Self-Publish Your Book
                                     <svg
                                       className="w-4 h-4 ml-1"
@@ -88,38 +88,38 @@ export default function Header() {
                               </div>
 
                               <div>
-                                <h3 className="font-semibold text-[15px] mb-4">Business & Marketing Copy</h3>
+                                <h3 className="font-semibold text-base mb-4">Business & Marketing Copy</h3>
                                 <nav className="flex flex-col space-y-3">
-                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
                                     Brand Voice & Tone
                                   </Link>
-                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
                                     Business Names & Slogans
                                   </Link>
-                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
                                     Case Studies
                                   </Link>
-                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
                                     White Papers
                                   </Link>
                                 </nav>
                               </div>
 
                               <div>
-                                <h3 className="font-semibold text-[15px] mb-4">Translation & Transcription</h3>
+                                <h3 className="font-semibold text-base mb-4">Translation & Transcription</h3>
                                 <nav className="flex flex-col space-y-3">
-                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
                                     Translation
                                   </Link>
                                   <div className="flex items-center space-x-2">
-                                    <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
+                                    <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
                                       Localization
                                     </Link>
                                     <Badge variant="secondary" className="bg-pink-100 text-pink-800">
                                       NEW
                                     </Badge>
                                   </div>
-                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
                                     Transcription
                                   </Link>
                                 </nav>
@@ -132,7 +132,7 @@ export default function Header() {
               
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-[15px] px-3 py-2 rounded-full hover:bg-secondary transition-colors">Solutions</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="text-base px-3 py-2 rounded-full hover:bg-secondary transition-colors">Solutions</NavigationMenuTrigger>
                 <NavigationMenuContent>
                 <div className="grid grid-cols-2 gap-8 p-6 w-[800px]">
                   <div>
@@ -226,7 +226,7 @@ export default function Header() {
               </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-[15px] text-600 px-3 py-2 rounded-full hover:bg-secondary transition-colors">Resources</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="text-base px-3 py-2 rounded-full hover:bg-secondary transition-colors">Resources</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
                     <ListItem href="/resources/blog" title="Blog">
@@ -251,7 +251,7 @@ export default function Header() {
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-[15px] px-3 py-2 rounded-full hover:bg-secondary transition-colors">Services</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="text-base px-3 py-2 rounded-full hover:bg-secondary transition-colors">Services</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="grid grid-cols-4 gap-3 p-6 md:w-[800px]">
                     <ul className="space-y-2">
@@ -317,7 +317,7 @@ export default function Header() {
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-[15px] px-3 py-2 rounded-full transition-colors">Pricing</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="text-base px-3 py-2 rounded-full transition-colors">Pricing</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
                     <ListItem href="/pricing/basic" title="Basic Plan">
@@ -336,7 +336,7 @@ export default function Header() {
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem className="text-sm rounded-full transition-colors">
-              <NavigationMenuTrigger className="text-[15px] px-3 py-2 rounded-full transition-colors">Company</NavigationMenuTrigger>
+              <NavigationMenuTrigger className="text-base px-3 py-2 rounded-full transition-colors">Company</NavigationMenuTrigger>
                 <NavigationMenuContent>
                 <div className="grid gap-6 w-[600px]">
                   <div className="grid grid-cols-2 p-4 gap-4">
