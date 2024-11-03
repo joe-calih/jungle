@@ -29,34 +29,105 @@ export default function Header() {
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-sm px-3 py-2 rounded-full hover:bg-secondary transition-colors">Features</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                    <li className="row-span-3">
-                      <NavigationMenuLink asChild>
-                        <Link
-                          className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                          href="/"
-                        >
-                          <div className="mb-2 mt-4 text-lg font-medium">
-                          ⚡ Semdeals
+                        <div className="w-[1010px] flex flex-col items-center">
+                          <div className="max-w-[1200px] mx-auto p-6">
+                            <div className="grid grid-cols-4 gap-8">
+                              <div>
+                                <h3 className="font-semibold text-base mb-4">Content Writing</h3>
+                                <nav className="flex flex-col space-y-3">
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                    Articles & Blog Posts
+                                  </Link>
+                                  <div className="flex items-center space-x-2">
+                                    <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                      Content Strategy
+                                    </Link>
+                                    <Badge variant="secondary" className="bg-pink-100 text-pink-800">
+                                      NEW
+                                    </Badge>
+                                  </div>
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                    Website Content
+                                  </Link>
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                    Scriptwriting
+                                  </Link>
+                                </nav>
+                              </div>
+
+                              <div>
+                                <h3 className="font-semibold text-base mb-4">Book & eBook Publishing</h3>
+                                <nav className="flex flex-col space-y-3">
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                    Book & eBook Writing
+                                  </Link>
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                    Book Editing
+                                  </Link>
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                    Beta Reading
+                                  </Link>
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900 flex items-center">
+                                    Self-Publish Your Book
+                                    <svg
+                                      className="w-4 h-4 ml-1"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      viewBox="0 0 24 24"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth={2}
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                                      />
+                                    </svg>
+                                  </Link>
+                                </nav>
+                              </div>
+
+                              <div>
+                                <h3 className="font-semibold text-base mb-4">Business & Marketing Copy</h3>
+                                <nav className="flex flex-col space-y-3">
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                    Brand Voice & Tone
+                                  </Link>
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                    Business Names & Slogans
+                                  </Link>
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                    Case Studies
+                                  </Link>
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                    White Papers
+                                  </Link>
+                                </nav>
+                              </div>
+
+                              <div>
+                                <h3 className="font-semibold text-base mb-4">Translation & Transcription</h3>
+                                <nav className="flex flex-col space-y-3">
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                    Translation
+                                  </Link>
+                                  <div className="flex items-center space-x-2">
+                                    <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                      Localization
+                                    </Link>
+                                    <Badge variant="secondary" className="bg-pink-100 text-pink-800">
+                                      NEW
+                                    </Badge>
+                                  </div>
+                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                    Transcription
+                                  </Link>
+                                </nav>
+                              </div>
+                            </div>
                           </div>
-                          <p className="text-sm leading-tight text-muted-foreground">
-                            Beautifully designed components built with Radix UI and
-                            Tailwind CSS.
-                          </p>
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <ListItem href="/docs" title="Introduction">
-                      Re-usable components built using Radix UI and Tailwind CSS.
-                    </ListItem>
-                    <ListItem href="/docs/installation" title="Installation">
-                      How to install dependencies and structure your app.
-                    </ListItem>
-                    <ListItem href="/docs/primitives/typography" title="Typography">
-                      Styles for headings, paragraphs, lists...etc
-                    </ListItem>
-                  </ul>
-                </NavigationMenuContent>
+                        </div>
+                      </NavigationMenuContent>
               </NavigationMenuItem>
               
 
