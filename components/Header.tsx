@@ -33,41 +33,41 @@ export default function Header() {
                           <div className="max-w-[1200px] mx-auto p-6">
                             <div className="grid grid-cols-4 gap-8">
                               <div>
-                                <h3 className="font-semibold text-base mb-4">Content Writing</h3>
+                                <h3 className="font-semibold text-[15px] mb-4">Content Writing</h3>
                                 <nav className="flex flex-col space-y-3">
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
                                     Articles & Blog Posts
                                   </Link>
                                   <div className="flex items-center space-x-2">
-                                    <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                    <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
                                       Content Strategy
                                     </Link>
                                     <Badge variant="secondary" className="bg-pink-100 text-pink-800">
                                       NEW
                                     </Badge>
                                   </div>
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
                                     Website Content
                                   </Link>
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
                                     Scriptwriting
                                   </Link>
                                 </nav>
                               </div>
 
                               <div>
-                                <h3 className="font-semibold text-base mb-4">Book & eBook Publishing</h3>
+                                <h3 className="font-semibold text-[15px] mb-4">Book & eBook Publishing</h3>
                                 <nav className="flex flex-col space-y-3">
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
                                     Book & eBook Writing
                                   </Link>
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
                                     Book Editing
                                   </Link>
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
                                     Beta Reading
                                   </Link>
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900 flex items-center">
+                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900 flex items-center">
                                     Self-Publish Your Book
                                     <svg
                                       className="w-4 h-4 ml-1"
@@ -88,38 +88,38 @@ export default function Header() {
                               </div>
 
                               <div>
-                                <h3 className="font-semibold text-base mb-4">Business & Marketing Copy</h3>
+                                <h3 className="font-semibold text-[15px] mb-4">Business & Marketing Copy</h3>
                                 <nav className="flex flex-col space-y-3">
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
                                     Brand Voice & Tone
                                   </Link>
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
                                     Business Names & Slogans
                                   </Link>
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
                                     Case Studies
                                   </Link>
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
                                     White Papers
                                   </Link>
                                 </nav>
                               </div>
 
                               <div>
-                                <h3 className="font-semibold text-base mb-4">Translation & Transcription</h3>
+                                <h3 className="font-semibold text-[15px] mb-4">Translation & Transcription</h3>
                                 <nav className="flex flex-col space-y-3">
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
                                     Translation
                                   </Link>
                                   <div className="flex items-center space-x-2">
-                                    <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                    <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
                                       Localization
                                     </Link>
                                     <Badge variant="secondary" className="bg-pink-100 text-pink-800">
                                       NEW
                                     </Badge>
                                   </div>
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
+                                  <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
                                     Transcription
                                   </Link>
                                 </nav>
