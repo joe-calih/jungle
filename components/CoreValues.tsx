@@ -38,7 +38,7 @@ export default function Component() {
   ]
 
   return (
-    <section className="relative w-full overflow-hidden bg-background">
+    <section className="relative w-full overflow-hidden bg-background border-b border-t">
       <div className="absolute bottom-0 left-0 h-[600px] w-[600px] opacity-10">
         <svg viewBox="0 0 100 100" className="h-full w-full">
           <path
@@ -64,7 +64,7 @@ export default function Component() {
       <div className="mx-auto max-w-[1300px] px-4 py-16 sm:px-6 lg:px-8">
         <div className="relative z-10 grid gap-12 lg:grid-cols-3">
           <div className="space-y-6 lg:col-span-1">
-            <h2 className="text-4xl font-bold tracking-tighter text-primary sm:text-5xl xl:text-6xl/none">
+            <h2 className="text-2xl font-bold tracking-tighter text-primary sm:text-5xl xl:text-4xl/none">
               Core values
             </h2>
             <p className="text-lg text-muted-foreground">

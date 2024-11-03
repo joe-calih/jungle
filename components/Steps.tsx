@@ -25,7 +25,7 @@ export default function Component() {
 
   return (
     <section className="w-full bg-white py-12 md:py-24">
-      <div className="mx-auto max-w-[1200px] px-4 md:px-6">
+      <div className="mx-auto max-w-[1230px] px-4 md:px-6">
         <div className="grid gap-12 lg:grid-cols-2">
           <div className="flex flex-col justify-center space-y-6">
             <Badge className="w-fit bg-primary/10 text-primary rounded-full" variant="secondary">
@@ -52,8 +52,8 @@ export default function Component() {
                   {step.number}
                 </div>
                  <div className="space-y-2">
-                  <h3 className="text-base font-semibold">{step.title}</h3>
-                  <p className="text-base text-gray-500">{step.description}</p>
+                  <h3 className="font-semibold text-lg">{step.title}</h3>
+                  <p className="text-gray-600">{step.description}</p>
                 </div>
               </div>
             ))}

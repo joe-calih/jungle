@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import "./globals.css";
 
+import BackToTopButton from "@/components/BackToTopButton";
+
 // Import Inter font from Google Fonts
 const inter = Inter({
   subsets: ["latin"],
@@ -26,6 +28,7 @@ export default function RootLayout({
       
         <Header/>
       {children}
+      <BackToTopButton />
       <Footer/>
       </body>
     </html>
