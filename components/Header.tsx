@@ -27,7 +27,7 @@ export default function Header() {
           <NavigationMenu>
             <NavigationMenuList className="px-3 py-2">
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-base px-3 py-2 rounded-full hover:bg-secondary transition-colors">Features</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="px-3 py-2 rounded-full hover:bg-secondary transition-colors">Features</NavigationMenuTrigger>
                 <NavigationMenuContent>
                         <div className="w-[1010px] flex flex-col items-center">
                           <div className="max-w-[1200px] mx-auto p-6">
@@ -132,7 +132,7 @@ export default function Header() {
               
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-base px-3 py-2 rounded-full hover:bg-secondary transition-colors">Solutions</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="px-3 py-2 rounded-full hover:bg-secondary transition-colors">Solutions</NavigationMenuTrigger>
                 <NavigationMenuContent>
                 <div className="grid grid-cols-2 gap-8 p-6 w-[800px]">
                   <div>
@@ -196,7 +196,7 @@ export default function Header() {
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-sm font-medium leading-none mb-4 text-muted-foreground">Users</h4>
+                    <h4 className=" font-medium leading-none mb-4 text-muted-foreground">Users</h4>
                     <div className="grid gap-4">
                       <NavigationMenuLink asChild>
                         <a href="#" className="group grid grid-cols-[40px_1fr] items-start gap-4 p-2 hover:bg-muted rounded-md">
@@ -226,7 +226,7 @@ export default function Header() {
               </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-base px-3 py-2 rounded-full hover:bg-secondary transition-colors">Resources</NavigationMenuTrigger>
+                <NavigationMenuTrigger className=" px-3 py-2 rounded-full hover:bg-secondary transition-colors">Resources</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
                     <ListItem href="/resources/blog" title="Blog">
