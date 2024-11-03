@@ -33,7 +33,7 @@ export default function Header() {
                           <div className="max-w-[1200px] mx-auto p-6">
                             <div className="grid grid-cols-4 gap-8">
                               <div>
-                                <h3 className="font-semibold text-[15px] mb-4">Content Writing</h3>
+                                <h3 className="font-semibold text-base mb-4">Content Writing</h3>
                                 <nav className="flex flex-col space-y-3">
                                   <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
                                     Articles & Blog Posts
@@ -56,7 +56,7 @@ export default function Header() {
                               </div>
 
                               <div>
-                                <h3 className="font-semibold text-[15px] mb-4">Book & eBook Publishing</h3>
+                                <h3 className="font-semibold text-base mb-4">Book & eBook Publishing</h3>
                                 <nav className="flex flex-col space-y-3">
                                   <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
                                     Book & eBook Writing
@@ -88,7 +88,7 @@ export default function Header() {
                               </div>
 
                               <div>
-                                <h3 className="font-semibold text-[15px] mb-4">Business & Marketing Copy</h3>
+                                <h3 className="font-semibold text-base mb-4">Business & Marketing Copy</h3>
                                 <nav className="flex flex-col space-y-3">
                                   <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
                                     Brand Voice & Tone
@@ -106,7 +106,7 @@ export default function Header() {
                               </div>
 
                               <div>
-                                <h3 className="font-semibold text-[15px] mb-4">Translation & Transcription</h3>
+                                <h3 className="font-semibold text-base mb-4">Translation & Transcription</h3>
                                 <nav className="flex flex-col space-y-3">
                                   <Link href="#" className="text-[15px] text-gray-600 hover:text-gray-900">
                                     Translation
