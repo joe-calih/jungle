@@ -37,7 +37,7 @@ export default async function Sidebar() {
                   blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(80, 80))}`}
                 />
                 <div>
-                  <Link href={`/blog/${post.slug}`} className="font-semibold hover:text-blue-600 transition duration-200">
+                  <Link href={`/blog/${post.slug}`} className="font-semibold subpixel-antialiased hover:text-blue-600 transition duration-200">
                     {post.title}
                   </Link>
                   <p className="text-sm text-muted-foreground">{post.date}</p>
