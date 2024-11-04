@@ -40,7 +40,7 @@ export default function BackToTopButton() {
       <AnimatePresence>
         {isVisible && (
           <motion.button
-            className="fixed bottom-8 right-8 bg-primary text-primary-foreground rounded-full p-3 shadow-lg hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+            className="fixed bottom-8 right-8 bg-primary text-primary-foreground rounded-full p-2 shadow-lg hover:bg-primary/90 focus:outline-none"
             onClick={scrollToTop}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
