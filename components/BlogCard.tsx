@@ -30,7 +30,7 @@ export default function BlogCard({ post }: { post: Post }) {
       </CardHeader>
       <CardContent>
         <Link href={`/blog/${post.slug}`}>
-          <CardTitle className="text-base font-semibold leading-normal hover:text-blue-600 line-clamp-2 pb-4">
+          <CardTitle className="text-base font-semibold leading-normal tracking-normal hover:text-blue-600 line-clamp-2 pb-4">
             {post.title}
           </CardTitle>
         </Link>
