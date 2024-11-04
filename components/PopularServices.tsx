@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { useState } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
+import Image from "next/image"
 
 interface Service {
   title: string
@@ -126,10 +127,12 @@ export default function Component() {
                           className="mt-auto rounded-xl overflow-hidden flex items-center justify-center"
                           style={{ backgroundColor: service.bgColor }}
                         >
-                          <img
+                          <Image
                             src={service.imageUrl}
                             alt={service.title}
-                            className="w-full h-[140px] object-cover p-2"
+                            width={160}
+                            height={140}
+                            className="object-cover p-2"
                           />
                         </div>
                       </div>

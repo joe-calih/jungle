@@ -1,16 +1,15 @@
 import Image from "next/image"
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 
 export default function Component() {
   return (
     <section className="w-full bg-white">
-      <div className="mx-auto max-w-[1200px] px-4 py-12 md:py-16 lg:py-20">
+      <div className="mx-auto max-w-[1250px] px-4 py-12 md:py-16 lg:py-20">
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
           <div className="flex flex-col justify-center space-y-8">
             <div className="space-y-6">
-              <h1 className="text-4xl font-bold tracking-tighter text-[#004D3C] sm:text-5xl xl:text-6xl/none">
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                 We Are Leading
                 <br />
                 Digital University
@@ -80,7 +79,7 @@ export default function Component() {
             </div>
             <div className="relative">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Homepage-10-11-04-2024_10_39_AM-mhW3ZfWEGOpRVxuGxfh975rArqOnG5.png"
+                src="/img/apple.webp"
                 alt="Student sitting on a chair"
                 width={600}
                 height={600}

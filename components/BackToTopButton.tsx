@@ -6,7 +6,7 @@ import { ChevronUp } from 'lucide-react'
 
 export default function BackToTopButton() {
   const [isVisible, setIsVisible] = useState(false)
-  const topRef = useRef(null)
+  const topRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -16,13 +16,15 @@ export default function BackToTopButton() {
       { threshold: 0 }
     )
 
-    if (topRef.current) {
-      observer.observe(topRef.current)
+    const currentRef = topRef.current
+
+    if (currentRef) {
+      observer.observe(currentRef)
     }
 
     return () => {
-      if (topRef.current) {
-        observer.unobserve(topRef.current)
+      if (currentRef) {
+        observer.unobserve(currentRef)
       }
     }
   }, [])
