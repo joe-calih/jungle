@@ -13,6 +13,7 @@ import FeatureSec from "@/components/FeatureSec";
 import FeaturesSec from "@/components/FeaturesSec";
 import Stargered from "@/components/Stargered";
 import Trust from "@/components/Trust";
+import BusinessSection from "@/components/BusinessSection";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
     <Steps/>
     <FeatureSec/>
     <FeaturesSec/>
+    <BusinessSection/>
     <Trust/>
     <ProcessSection/>
     <PricingSection/>
