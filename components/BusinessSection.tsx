@@ -6,7 +6,7 @@ import Link from "next/link"
 export default function Component() {
   return (
     <section className="w-full bg-white py-16">
-      <div className="mx-auto max-w-[1200px] px-4">
+      <div className="mx-auto max-w-[1250px] px-4">
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
           {/* Left Column */}
           <div className="space-y-6">
