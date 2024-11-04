@@ -25,13 +25,13 @@ export default function CategoryFilter({ categories, selectedCategory }: Categor
         <Button 
           key={category} 
           variant={category === selectedCategory ? "default" : "outline"} 
-          size="sm"
           onClick={() => handleCategoryClick(category)}
-          className="rounded-full hover:shadow-sm transition-shadow duration-300"
+          className="text-[14px] rounded-full hover:shadow-sm transition-shadow duration-300" 
         >
           {category}
         </Button>
       ))}
     </div>
   )
+  
 }
