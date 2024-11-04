@@ -44,7 +44,7 @@ export default function BlogCard({ post }: { post: Post }) {
           </Link>
           <p className="text-sm text-muted-foreground mb-2">{post.date}</p>
         </div>
-        <p className="mb-4 line-clamp-3">{post.excerpt}</p>
+        <p className="text-base mb-2 line-clamp-3">{post.excerpt}</p>
       </CardContent>
       <CardFooter className="flex justify-between">
         <span className="flex items-center gap-1 text-sm text-muted-foreground">
