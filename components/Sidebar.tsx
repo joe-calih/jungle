@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Mail, ExternalLink } from "lucide-react"
+import { Mail, ExternalLink, TrendingUpIcon} from "lucide-react"
 import Image from "next/image"
 import { getLatestPosts } from '@/lib/api'
 
@@ -20,7 +20,7 @@ export default async function Sidebar() {
     <aside className="w-full lg:w-[30%] space-y-6">
       <Card>
         <CardHeader>
-          <CardTitle>Latest Posts</CardTitle>
+          <CardTitle className="flex items-center space-x-2"><TrendingUpIcon />Latest Posts</CardTitle>
         </CardHeader>
         <CardContent>
           <ul className="space-y-4">
