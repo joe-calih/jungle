@@ -5,7 +5,7 @@ export default function Component() {
     <section className="w-full bg-background py-16 md:py-24">
       <div className="mx-auto max-w-[1200px] px-4 text-center">
         <h2 className="mx-auto max-w-[800px] text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-          Award-winning tools trusted by the world's leading companies
+          Award-winning tools trusted by the worlds leading companies
         </h2>
         
         <div className="mt-16 grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-8">
