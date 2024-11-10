@@ -7,7 +7,6 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Check } from 'lucide-react'
 
-
 const tabContent = {
   product: {
     title: "Ready to use blocks",
