@@ -22,7 +22,7 @@ function YouTubeVideo({ videoId }: { videoId: string }) {
         allowFullScreen
       ></iframe>
     )
-  }
+  } 
 
   return (
     <button
