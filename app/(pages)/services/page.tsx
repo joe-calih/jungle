@@ -5,35 +5,6 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Play } from "lucide-react"
 
-export const metadata = {
-  title: 'Services',
-  description: 'Get in touch with Your Company Name for inquiries, support, and feedback. We are here to assist you.',
-  keywords: ['Contact', 'Support', 'Customer Service', 'Your Company Name'],
-  openGraph: {
-    title: 'Services',
-    description: 'Reach out to us for inquiries or support. Contact Your Company Name today!',
-    url: 'https://yourwebsite.com/contact-us',
-    images: [
-      {
-        url: 'https://yourwebsite.com/images/contact-us-banner.jpg',
-        width: 800,
-        height: 600,
-        alt: 'Services Banner',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Services',
-    description: 'Have any questions? Contact Your Company Name for support and inquiries.',
-    images: ['https://yourwebsite.com/images/contact-us-banner.jpg'],
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
-
 function YouTubeVideo({ videoId }: { videoId: string }) {
   const [isPlaying, setIsPlaying] = useState(false)
 
@@ -65,6 +36,36 @@ function YouTubeVideo({ videoId }: { videoId: string }) {
     </button>
   )
 }
+
+
+export const metadata = {
+  title: 'Services',
+  description: 'Get in touch with Your Company Name for inquiries, support, and feedback. We are here to assist you.',
+  keywords: ['Contact', 'Support', 'Customer Service', 'Your Company Name'],
+  openGraph: {
+    title: 'Services',
+    description: 'Reach out to us for inquiries or support. Contact Your Company Name today!',
+    url: 'https://yourwebsite.com/contact-us',
+    images: [
+      {
+        url: 'https://yourwebsite.com/images/contact-us-banner.jpg',
+        width: 800,
+        height: 600,
+        alt: 'Services Banner',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Services',
+    description: 'Have any questions? Contact Your Company Name for support and inquiries.',
+    images: ['https://yourwebsite.com/images/contact-us-banner.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function SmartHomeHero() {
   return (
