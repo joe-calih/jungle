@@ -1,38 +1,11 @@
+"use client"
+
 import { useState } from 'react'
 import Image from 'next/image'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Check } from 'lucide-react'
-
-export const metadata = {
-  title: 'Lessons',
-  description: 'Get in touch with Your Company Name for inquiries, support, and feedback. We are here to assist you.',
-  keywords: ['Contact', 'Support', 'Customer Service', 'Your Company Name'],
-  openGraph: {
-    title: 'Lessons',
-    description: 'Reach out to us for inquiries or support. Contact Your Company Name today!',
-    url: 'https://yourwebsite.com/contact-us',
-    images: [
-      {
-        url: 'https://yourwebsite.com/images/contact-us-banner.jpg',
-        width: 800,
-        height: 600,
-        alt: 'Lessons Banner',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Lessons',
-    description: 'Have any questions? Contact Your Company Name for support and inquiries.',
-    images: ['https://yourwebsite.com/images/contact-us-banner.jpg'],
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
 
 
 const tabContent = {
