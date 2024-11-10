@@ -9,7 +9,7 @@ const ContactPage = () => {
       {/* SEO Metadata and Schema Markup */}
       <Head>
         {/* Primary Meta Tags */}
-        <title>Contact Us | Your Company Name</title>
+        <title>Contact Us</title>
         <meta
           name="description"
           content="Get in touch with Your Company Name for inquiries, support, and feedback. We're here to assist you with any questions you may have."
