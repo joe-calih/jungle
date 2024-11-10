@@ -1,5 +1,3 @@
-'use client'
-
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { Button } from "@/components/ui/button"
@@ -11,7 +9,7 @@ export const metadata = {
   description: 'Get in touch with Your Company Name for inquiries, support, and feedback. We are here to assist you.',
   keywords: ['Contact', 'Support', 'Customer Service', 'Your Company Name'],
   openGraph: {
-    title: 'Membership | Your Company Name',
+    title: 'Membership',
     description: 'Reach out to us for inquiries or support. Contact Your Company Name today!',
     url: 'https://yourwebsite.com/contact-us',
     images: [
@@ -25,7 +23,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Membership | Your Company Name',
+    title: 'Membership',
     description: 'Have any questions? Contact Your Company Name for support and inquiries.',
     images: ['https://yourwebsite.com/images/contact-us-banner.jpg'],
   },
