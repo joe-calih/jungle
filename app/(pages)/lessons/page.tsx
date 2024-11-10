@@ -25,7 +25,7 @@ const tabContent = {
     description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     features: ["Our Team", "Mission", "Vision", "Values"],
     image: "/img/starting.webp?height=300&width=300"
-  },
+  }, 
   portfolio: {
     title: "Our work portfolio",
     description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
