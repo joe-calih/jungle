@@ -3,6 +3,35 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { JSX, SVGProps } from "react"
 
+export const metadata = {
+  title: 'Support',
+  description: 'Get in touch with Your Company Name for inquiries, support, and feedback. We are here to assist you.',
+  keywords: ['Contact', 'Support', 'Customer Service', 'Your Company Name'],
+  openGraph: {
+    title: 'Support',
+    description: 'Reach out to us for inquiries or support. Contact Your Company Name today!',
+    url: 'https://yourwebsite.com/contact-us',
+    images: [
+      {
+        url: 'https://yourwebsite.com/images/contact-us-banner.jpg',
+        width: 800,
+        height: 600,
+        alt: 'Support Banner',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Support',
+    description: 'Have any questions? Contact Your Company Name for support and inquiries.',
+    images: ['https://yourwebsite.com/images/contact-us-banner.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
 export default function Component() {
   return (
     <div className="w-full">
@@ -80,12 +109,12 @@ export default function Component() {
         </div>
       </section>
 
-      {/* Pricing Section */}
+      {/* Support Section */}
       <section className="py-20">
         <div className="container mx-auto max-w-[1200px] px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Choose Your Plan</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {pricingPlans.map((plan, index) => (
+            {SupportPlans.map((plan, index) => (
               <Card key={index} className={`flex flex-col ${plan.featured ? 'border-purple-500 border-2' : ''}`}>
                 <CardHeader>
                   <CardTitle className="text-2xl font-bold">{plan.name}</CardTitle>
@@ -192,7 +221,7 @@ const testimonials = [
   },
 ]
 
-const pricingPlans = [
+const SupportPlans = [
   {
     name: "Basic",
     price: 29,

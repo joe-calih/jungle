@@ -7,6 +7,36 @@ import { Clock, Eye, Mail, ExternalLink, ChevronRight, MessageSquare, Facebook, 
 import Image from "next/image"
 import Link from "next/link"
 
+export const metadata = {
+  title: 'Dashboard',
+  description: 'Get in touch with Your Company Name for inquiries, support, and feedback. We are here to assist you.',
+  keywords: ['Contact', 'Support', 'Customer Service', 'Your Company Name'],
+  openGraph: {
+    title: 'Dashboard',
+    description: 'Reach out to us for inquiries or support. Contact Your Company Name today!',
+    url: 'https://yourwebsite.com/contact-us',
+    images: [
+      {
+        url: 'https://yourwebsite.com/images/contact-us-banner.jpg',
+        width: 800,
+        height: 600,
+        alt: 'Contact Us Banner',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Dashboard',
+    description: 'Have any questions? Contact Your Company Name for support and inquiries.',
+    images: ['https://yourwebsite.com/images/contact-us-banner.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+
 export default function SinglePostPage() {
   const currentPost = {
     title: "Understanding React Hooks: A Comprehensive Guide",

@@ -6,6 +6,36 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
+export const metadata = {
+  title: 'Membership',
+  description: 'Get in touch with Your Company Name for inquiries, support, and feedback. We are here to assist you.',
+  keywords: ['Contact', 'Support', 'Customer Service', 'Your Company Name'],
+  openGraph: {
+    title: 'Membership | Your Company Name',
+    description: 'Reach out to us for inquiries or support. Contact Your Company Name today!',
+    url: 'https://yourwebsite.com/contact-us',
+    images: [
+      {
+        url: 'https://yourwebsite.com/images/contact-us-banner.jpg',
+        width: 800,
+        height: 600,
+        alt: 'Membership Banner',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Membership | Your Company Name',
+    description: 'Have any questions? Contact Your Company Name for support and inquiries.',
+    images: ['https://yourwebsite.com/images/contact-us-banner.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+
 export default function ProductLaunchLandingPage() {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,

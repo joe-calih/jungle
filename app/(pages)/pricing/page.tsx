@@ -1,6 +1,36 @@
 import { Button } from "@/components/ui/button"
 import { Star, Users, Heart, ArrowRight, Check } from "lucide-react"
 
+export const metadata = {
+  title: 'Pricing',
+  description: 'Get in touch with Your Company Name for inquiries, support, and feedback. We are here to assist you.',
+  keywords: ['Contact', 'Support', 'Customer Service', 'Your Company Name'],
+  openGraph: {
+    title: 'Pricing',
+    description: 'Reach out to us for inquiries or support. Contact Your Company Name today!',
+    url: 'https://yourwebsite.com/contact-us',
+    images: [
+      {
+        url: 'https://yourwebsite.com/images/contact-us-banner.jpg',
+        width: 800,
+        height: 600,
+        alt: 'Pricing Banner',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Pricing',
+    description: 'Have any questions? Contact Your Company Name for support and inquiries.',
+    images: ['https://yourwebsite.com/images/contact-us-banner.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white text-black">
@@ -45,7 +75,7 @@ export default function LandingPage() {
         <h2 className="text-center text-4xl font-bold mb-4">Pricing</h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
           Check out our affordable pricing plans below and choose the one that suits you best. If you need a custom
-          plan, please contact us.
+          plan, please Pricing.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <PricingCard

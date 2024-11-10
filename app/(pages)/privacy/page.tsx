@@ -5,6 +5,35 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
+export const metadata = {
+  title: 'Privacy',
+  description: 'Get in touch with Your Company Name for inquiries, support, and feedback. We are here to assist you.',
+  keywords: ['Contact', 'Support', 'Customer Service', 'Your Company Name'],
+  openGraph: {
+    title: 'Privacy',
+    description: 'Reach out to us for inquiries or support. Contact Your Company Name today!',
+    url: 'https://yourwebsite.com/contact-us',
+    images: [
+      {
+        url: 'https://yourwebsite.com/images/contact-us-banner.jpg',
+        width: 800,
+        height: 600,
+        alt: 'Privacy Banner',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Privacy',
+    description: 'Have any questions? Contact Your Company Name for support and inquiries.',
+    images: ['https://yourwebsite.com/images/contact-us-banner.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
 export default function PrivacyPolicy() {
   return (
     

@@ -7,6 +7,36 @@ import { ArrowRight, Link, Search,Play, AlertTriangle  } from "lucide-react"
 import Company from "@/components/Companys";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 
+export const metadata = {
+  title: 'Disclaimer',
+  description: 'Get in touch with Your Company Name for inquiries, support, and feedback. We are here to assist you.',
+  keywords: ['Contact', 'Support', 'Customer Service', 'Your Company Name'],
+  openGraph: {
+    title: 'Disclaimer',
+    description: 'Reach out to us for inquiries or support. Contact Your Company Name today!',
+    url: 'https://yourwebsite.com/contact-us',
+    images: [
+      {
+        url: 'https://yourwebsite.com/images/contact-us-banner.jpg',
+        width: 800,
+        height: 600,
+        alt: 'Contact Us Banner',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Disclaimer',
+    description: 'Have any questions? Contact Your Company Name for support and inquiries.',
+    images: ['https://yourwebsite.com/images/contact-us-banner.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+
 export default function LandingPage() {
   return (
     <div className="flex flex-col min-h-screen">
