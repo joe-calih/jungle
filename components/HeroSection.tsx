@@ -54,29 +54,6 @@ export default function Component() {
             </div>
           </div>
           <div className="relative hidden lg:block">
-            <div className="absolute inset-0">
-              <svg
-                className="h-full w-full"
-                viewBox="0 0 600 600"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M400 150C500 250 500 350 400 450C300 550 200 550 100 450C0 350 0 250 100 150C200 50 300 50 400 150Z"
-                  fill="#FCD34D"
-                />
-                <path
-                  d="M350 200C425 275 425 350 350 425C275 500 200 500 125 425C50 350 50 275 125 200C200 125 275 125 350 200Z"
-                  fill="#EF4444"
-                  fillOpacity="0.8"
-                />
-                <path
-                  d="M300 250C350 300 350 350 300 400C250 450 200 450 150 400C100 350 100 300 150 250C200 200 250 200 300 250Z"
-                  fill="#10B981"
-                  fillOpacity="0.6"
-                />
-              </svg>
-            </div>
             <div className="relative">
               <Image
                 src="/img/apple.webp"
