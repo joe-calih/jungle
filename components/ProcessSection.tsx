@@ -7,7 +7,7 @@ const ProcessSection = () => {
     ];
   
     return (
-      <section id="process" className="container mx-auto max-w-[1230px] px-4 py-10 border-t">
+      <section id="process" className="container mx-auto max-w-[1200px] px-4 py-10 border-t">
         <ol className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
             <li key={step.title} className="flex items-start">
