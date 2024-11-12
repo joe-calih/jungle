@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react"
 export default function Component() {
   return (
     <section className="w-full bg-white">
-      <div className="mx-auto max-w-[1250px] px-4 py-12 md:py-16 lg:py-20">
+      <div className="mx-auto max-w-[1200px] px-4 py-12 md:py-16 lg:py-20">
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
           <div className="flex flex-col justify-center space-y-8">
             <div className="space-y-6">

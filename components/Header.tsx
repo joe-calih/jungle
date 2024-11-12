@@ -18,7 +18,7 @@ import { Heart, Star, Search, Sparkles, Box, LayoutGrid, LineChart, Monitor, Set
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background">
-      <div className="flex h-16 items-center justify-between container mx-auto max-w-[1300px] px-4">
+      <div className="flex h-16 items-center justify-between container mx-auto max-w-[1200px] px-4">
         <div className="mr-4 flex items-center">
           <Link className="mr-6 flex items-center space-x-2" href="/">
             <Image src="/favicon.ico" alt="Semdeals Logo" width={26} height={26} />

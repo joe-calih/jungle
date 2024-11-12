@@ -100,7 +100,7 @@ export default function Component() {
 
   return (
     <section className="w-full bg-white py-10">
-      <div className="mx-auto max-w-[1250px] px-4">
+      <div className="mx-auto max-w-[1200px] px-4">
         <div className="relative">
           <div className="overflow-hidden">
             <motion.div
