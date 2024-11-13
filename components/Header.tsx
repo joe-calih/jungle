@@ -1,3 +1,5 @@
+'use client'
+
 import * as React from "react"
 import Link from "next/link"
 import Image from "next/image"
@@ -13,21 +15,34 @@ import {
 } from "@/components/ui/navigation-menu"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Heart, Star, Search, Sparkles, Box, LayoutGrid, LineChart, Monitor, Settings, Shapes, BarChart, Code, FileText, Paintbrush, PieChart, Plug, Users } from 'lucide-react'
+import { Heart, Star, Search, Sparkles, Box, LayoutGrid, LineChart, Monitor, Settings, Shapes, BarChart, Code, FileText, Paintbrush, PieChart, Plug, Users, X, Menu } from 'lucide-react'
+import { useEffect, useState } from 'react'
 
 export default function Header() {
+  const [isScrolled, setIsScrolled] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background">
+    <header className={`sticky top-0 z-50 w-full bg-background transition-shadow ${isScrolled ? 'border-b shadow-sm' : ''}`}>
       <div className="flex h-16 items-center justify-between container mx-auto max-w-[1200px] px-4">
         <div className="mr-4 flex items-center">
           <Link className="mr-6 flex items-center space-x-2" href="/">
-            <Image src="/favicon.ico" alt="Semdeals Logo" width={26} height={26} />
-            <span className="hidden font-bold sm:inline-block">Semdeals</span>
+            <Image src="/favicon.ico" alt="Studio Logo" width={26} height={26} priority />
+            <span className="hidden font-bold sm:inline-block">Studio</span>
           </Link>
-          <NavigationMenu>
+          <NavigationMenu className="hidden md:block">
             <NavigationMenuList className="px-3 py-2">
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-base px-3 py-2 rounded-full hover:bg-secondary transition-colors">Features</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="text-[15px] px-3 py-2 rounded-full hover:bg-secondary transition-colors">Features</NavigationMenuTrigger>
                 <NavigationMenuContent>
                         <div className="w-[1010px] flex flex-col items-center">
                           <div className="max-w-[1200px] mx-auto p-6">
@@ -132,7 +147,7 @@ export default function Header() {
               
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-base px-3 py-2 rounded-full hover:bg-secondary transition-colors">Solutions</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="text-[15px] px-3 py-2 rounded-full hover:bg-secondary transition-colors">Solutions</NavigationMenuTrigger>
                 <NavigationMenuContent>
                 <div className="grid grid-cols-2 gap-8 p-6 w-[800px]">
                   <div>
@@ -226,7 +241,7 @@ export default function Header() {
               </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-base px-3 py-2 rounded-full hover:bg-secondary transition-colors">Resources</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="text-[15px] px-3 py-2 rounded-full hover:bg-secondary transition-colors">Resources</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
                     <ListItem href="/resources/blog" title="Blog">
@@ -251,7 +266,7 @@ export default function Header() {
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-base px-3 py-2 rounded-full hover:bg-secondary transition-colors">Services</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="text-[15px] px-3 py-2 rounded-full hover:bg-secondary transition-colors">Services</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="grid grid-cols-4 gap-3 p-6 md:w-[800px]">
                     <ul className="space-y-2">
@@ -317,7 +332,7 @@ export default function Header() {
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-base px-3 py-2 rounded-full transition-colors">Pricing</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="text-[15px] px-3 py-2 rounded-full transition-colors">Pricing</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
                     <ListItem href="/pricing/basic" title="Basic Plan">
@@ -336,7 +351,7 @@ export default function Header() {
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem className="text-sm rounded-full transition-colors">
-              <NavigationMenuTrigger className="text-base px-3 py-2 rounded-full transition-colors">Company</NavigationMenuTrigger>
+              <NavigationMenuTrigger className="text-[15px] px-3 py-2 rounded-full transition-colors">Company</NavigationMenuTrigger>
                 <NavigationMenuContent>
                 <div className="grid gap-6 w-[600px]">
                   <div className="grid grid-cols-2 p-4 gap-4">
@@ -428,7 +443,7 @@ export default function Header() {
                 </div>
               </NavigationMenuContent>
               </NavigationMenuItem>
-              <NavigationMenuItem className="text-base rounded-full transition-colors">
+              <NavigationMenuItem style={{ fontSize: '18px' }} className="rounded-full transition-colors">
                 <Link href="/blog" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()} >
                     Enterprise
@@ -438,7 +453,6 @@ export default function Header() {
             </NavigationMenuList>
           </NavigationMenu>
         </div>
-
         <div className="flex items-center space-x-3">
           <Link href="/login">
             <Button variant="outline" className="hidden sm:inline-flex">
@@ -448,23 +462,49 @@ export default function Header() {
           <Link href="/signup">
             <Button>Sign Up</Button>
           </Link>
+          <Button
+            variant="ghost"
+            className="md:hidden"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
+          </Button>
         </div>
       </div>
+      {isMobileMenuOpen && (
+        <div className="md:hidden">
+          <nav className="px-4 py-2 space-y-2">
+            {/* Mobile navigation items */}
+            <Link href="#" className="block py-2">Features</Link>
+            <Link href="#" className="block py-2">Solutions</Link>
+            <Link href="#" className="block py-2">Resources</Link>
+            <Link href="#" className="block py-2">Services</Link>
+            <Link href="#" className="block py-2">Pricing</Link>
+            <Link href="#" className="block py-2">Company</Link>
+            <Link href="#" className="block py-2">Enterprise</Link>
+          </nav>
+        </div>
+      )}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "Semdeals",
-        "url": "https://www.semdeals.com",
-        "logo": "https://www.semdeals.com/favicon.ico",
+        "name": "Studio",
+        "url": "https://www.studio.co.ke",
+        "logo": "https://www.studio.com/favicon.ico",
         "sameAs": [
-          "https://www.facebook.com/semdeals",
-          "https://www.twitter.com/semdeals",
-          "https://www.linkedin.com/company/semdeals"
+          "https://www.facebook.com/studio_kenya",
+          "https://twitter.com/studiokenya",
+          "https://www.linkedin.com/company/studio_kenya"
         ]
       })}} />
     </header>
   )
 }
+
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,

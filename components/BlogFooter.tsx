@@ -11,7 +11,7 @@ export default function Footer() {
       {
         "@type": "SiteNavigationElement",
         "name": "Components",
-        "url": "/components"
+        "url": ""
       },
       {
         "@type": "SiteNavigationElement",
@@ -42,23 +42,23 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-medium mb-4">Components</h3>
             <ul className="space-y-4 font-normal text-base -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;">
-              <li><Link href="/components/membership" className="text-base hover:underline">Membership</Link></li>
-              <li><Link href="/components/disclaimer" className="text-base hover:underline">Disclaimer</Link></li>
-              <li><Link href="/components/lessons" className="text-base hover:underline">Lessons</Link></li>
-              <li><Link href="/components/cta-sections" className="text-base hover:underline">CTA Sections</Link></li>
-              <li><Link href="/components/testimonials" className="text-base hover:underline">Testimonials</Link></li>
-              <li><Link href="/components/feature-sections" className="text-base hover:underline">Feature Sections</Link></li>
-              <li><Link href="/components/pricing-sections" className="text-base hover:underline">Pricing Sections</Link></li>
-              <li><Link href="/components/cards" className="text-base hover:underline">Cards</Link></li>
-              <li><Link href="/components/navbars" className="text-base hover:underline">Navbars</Link></li>
-              <li><Link href="/components/footers" className="text-base hover:underline">Footers</Link></li>
-              <li><Link href="/components/login-signup" className="text-base hover:underline">Login and Signup</Link></li>
-              <li><Link href="/components/contact-sections" className="text-base hover:underline">Contact sections</Link></li>
-              <li><Link href="/components/blog-sections" className="text-base hover:underline">Blog Sections</Link></li>
-              <li><Link href="/components/blog-content-sections" className="text-base hover:underline">Blog Content Sections</Link></li>
-              <li><Link href="/components/faqs" className="text-base hover:underline">FAQs</Link></li>
-              <li><Link href="/components/sidebars" className="text-base hover:underline">Sidebars</Link></li>
-              <li><Link href="/components/stats-sections" className="text-base hover:underline">Stats Sections</Link></li>
+              <li><Link href="/membership" className="text-base hover:underline">Membership</Link></li>
+              <li><Link href="/disclaimer" className="text-base hover:underline">Disclaimer</Link></li>
+              <li><Link href="/lessons" className="text-base hover:underline">Lessons</Link></li>
+              <li><Link href="/changelog" className="text-base hover:underline">Changelog</Link></li>
+              <li><Link href="/contact" className="text-base hover:underline">Contact</Link></li>
+              <li><Link href="/dashboard" className="text-base hover:underline">Dashboard</Link></li>
+              <li><Link href="/landing" className="text-base hover:underline">Landing</Link></li>
+              <li><Link href="/pricing" className="text-base hover:underline">Pricing</Link></li>
+              <li><Link href="/privacy" className="text-base hover:underline">Privacy</Link></li>
+              <li><Link href="/products" className="text-base hover:underline">Products</Link></li>
+              <li><Link href="/services" className="text-base hover:underline">Services</Link></li>
+              <li><Link href="/studio" className="text-base hover:underline">Studio</Link></li>
+              <li><Link href="/blog" className="text-base hover:underline">Blog</Link></li>
+              <li><Link href="/support" className="text-base hover:underline">Support</Link></li>
+              <li><Link href="/faqs" className="text-base hover:underline">FAQs</Link></li>
+              <li><Link href="/sidebars" className="text-base hover:underline">Sidebars</Link></li>
+              <li><Link href="/stats-sections" className="text-base hover:underline">Stats Sections</Link></li>
             </ul>
           </div>
 
@@ -76,7 +76,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mt-8 mb-4">Pages</h3>
             <ul className="space-y-4 font-normal text-xs -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;">
               <li><Link href="/products" className="text-base hover:underline">All Products</Link></li>
-              <li><Link href="/components" className="text-base hover:underline">Components</Link></li>
+              <li><Link href="" className="text-base hover:underline">Components</Link></li>
               <li><Link href="/templates" className="text-base hover:underline">Templates</Link></li>
               <li><Link href="/figma-kit" className="text-base hover:underline">Figma Kit</Link></li>
               <li><Link href="/categories" className="text-base hover:underline">Categories</Link></li>

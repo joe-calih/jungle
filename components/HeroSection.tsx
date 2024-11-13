@@ -58,7 +58,7 @@ export default function Component() {
                 src="/img/landing/infographics/persona.webp"
                 alt="Student sitting on a chair"
                 width={600}
-                height={600}
+                height={400}
                 className="object-contain"
                 priority
               />
