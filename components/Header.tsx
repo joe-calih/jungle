@@ -428,7 +428,7 @@ export default function Header() {
                 </div>
               </NavigationMenuContent>
               </NavigationMenuItem>
-              <NavigationMenuItem>
+              <NavigationMenuItem className="text-base rounded-full transition-colors">
                 <Link href="/blog" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()} >
                     Enterprise
@@ -439,14 +439,14 @@ export default function Header() {
           </NavigationMenu>
         </div>
 
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-3">
           <Link href="/login">
             <Button variant="outline" className="hidden sm:inline-flex">
-              Sign In
+              Log In
             </Button>
           </Link>
           <Link href="/signup">
-            <Button>Get Started</Button>
+            <Button>Sign Up</Button>
           </Link>
         </div>
       </div>

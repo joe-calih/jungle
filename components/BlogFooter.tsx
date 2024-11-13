@@ -1,74 +1,112 @@
 import Link from "next/link"
+import Script from "next/script"
 
 export default function Footer() {
+  const footerSchema = {
+    "@context": "https://schema.org",
+    "@type": "WPFooter",
+    "name": "Semdeals Footer",
+    "description": "Footer navigation for Semdeals website",
+    "hasPart": [
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Components",
+        "url": "/components"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Templates",
+        "url": "/templates"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Aceternity UI",
+        "url": "/aceternity-ui"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "name": "Pages",
+        "url": "/pages"
+      }
+    ]
+  }
+
   return (
     <footer className="w-full bg-white font-normal text-base -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;">
-      <div className="container mx-auto max-w-[1300px] px-4 pt-12 pb-6">
+      <Script id="footer-schema" type="application/ld+json">
+        {JSON.stringify(footerSchema)}
+      </Script>
+      <div className="container mx-auto max-w-[1200px] px-4 pt-12 pb-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Column 1 */}
           <div>
             <h3 className="text-lg font-medium mb-4">Components</h3>
-            <ul className="space-y-4	font-normal text-base -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;">
-              {["Hero Sections", "Logo Clouds", "Bento Grids", "CTA Sections", "Testimonials", "Feature Sections", "Pricing Sections", "Cards", "Navbars", "Footers", "Login and Signup", "Contact sections", "Blog Sections", "Blog Content Sections", "FAQs", "Sidebars", "Stats Sections"].map((item) => (
-                <li key={item}>
-                  <Link href="#" className="text-base hover:underline">
-                    {item}
-                  </Link>
-                </li>
-              ))}
+            <ul className="space-y-4 font-normal text-base -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;">
+              <li><Link href="/components/membership" className="text-base hover:underline">Membership</Link></li>
+              <li><Link href="/components/disclaimer" className="text-base hover:underline">Disclaimer</Link></li>
+              <li><Link href="/components/lessons" className="text-base hover:underline">Lessons</Link></li>
+              <li><Link href="/components/cta-sections" className="text-base hover:underline">CTA Sections</Link></li>
+              <li><Link href="/components/testimonials" className="text-base hover:underline">Testimonials</Link></li>
+              <li><Link href="/components/feature-sections" className="text-base hover:underline">Feature Sections</Link></li>
+              <li><Link href="/components/pricing-sections" className="text-base hover:underline">Pricing Sections</Link></li>
+              <li><Link href="/components/cards" className="text-base hover:underline">Cards</Link></li>
+              <li><Link href="/components/navbars" className="text-base hover:underline">Navbars</Link></li>
+              <li><Link href="/components/footers" className="text-base hover:underline">Footers</Link></li>
+              <li><Link href="/components/login-signup" className="text-base hover:underline">Login and Signup</Link></li>
+              <li><Link href="/components/contact-sections" className="text-base hover:underline">Contact sections</Link></li>
+              <li><Link href="/components/blog-sections" className="text-base hover:underline">Blog Sections</Link></li>
+              <li><Link href="/components/blog-content-sections" className="text-base hover:underline">Blog Content Sections</Link></li>
+              <li><Link href="/components/faqs" className="text-base hover:underline">FAQs</Link></li>
+              <li><Link href="/components/sidebars" className="text-base hover:underline">Sidebars</Link></li>
+              <li><Link href="/components/stats-sections" className="text-base hover:underline">Stats Sections</Link></li>
             </ul>
           </div>
 
           {/* Column 2 */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Templates</h3>
-            <ul className="space-y-4	font-normal text-base -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;">
-              {["Startup Landing Page Template", "AI SaaS Template", "Proactiv Marketing Template", "Agenlabs Agency Template", "DevPro Portfolio Template", "Foxtrot Marketing Template"].map((item) => (
-                <li key={item}>
-                  <Link href="#" className="text-base hover:underline">
-                    {item}
-                  </Link>
-                </li>
-              ))}
+            <ul className="space-y-4 font-normal text-base -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;">
+              <li><Link href="/templates/startup-landing-page" className="text-base hover:underline">Startup Landing Page Template</Link></li>
+              <li><Link href="/templates/ai-saas" className="text-base hover:underline">AI SaaS Template</Link></li>
+              <li><Link href="/templates/proactiv-marketing" className="text-base hover:underline">Proactiv Marketing Template</Link></li>
+              <li><Link href="/templates/agenlabs-agency" className="text-base hover:underline">Agenlabs Agency Template</Link></li>
+              <li><Link href="/templates/devpro-portfolio" className="text-base hover:underline">DevPro Portfolio Template</Link></li>
+              <li><Link href="/templates/foxtrot-marketing" className="text-base hover:underline">Foxtrot Marketing Template</Link></li>
             </ul>
             <h3 className="text-lg font-semibold mt-8 mb-4">Pages</h3>
-            <ul className="space-y-4	font-normal text-xs -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;">
-              {["All Products", "Components", "Templates", "Figma Kit", "Categories", "Box Shadows", "Pricing"].map((item) => (
-                <li key={item}>
-                  <Link href="#" className="text-base hover:underline">
-                    {item}
-                  </Link>
-                </li>
-              ))}
+            <ul className="space-y-4 font-normal text-xs -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;">
+              <li><Link href="/products" className="text-base hover:underline">All Products</Link></li>
+              <li><Link href="/components" className="text-base hover:underline">Components</Link></li>
+              <li><Link href="/templates" className="text-base hover:underline">Templates</Link></li>
+              <li><Link href="/figma-kit" className="text-base hover:underline">Figma Kit</Link></li>
+              <li><Link href="/categories" className="text-base hover:underline">Categories</Link></li>
+              <li><Link href="/box-shadows" className="text-base hover:underline">Box Shadows</Link></li>
+              <li><Link href="/pricing" className="text-base hover:underline">Pricing</Link></li>
             </ul>
           </div>
 
           {/* Column 3 */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Aceternity UI</h3>
-            <ul className="space-y-4	font-normal text-xs -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;">
-              {["Aceternity Studio", "Licence", "Refunds", "Privacy Policy", "Terms and Conditions"].map((item) => (
-                <li key={item}>
-                  <Link href="#" className="text-base hover:underline">
-                    {item}
-                  </Link>
-                </li>
-              ))}
+            <ul className="space-y-4 font-normal text-xs -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;">
+              <li><Link href="/aceternity-studio" className="text-base hover:underline">Aceternity Studio</Link></li>
+              <li><Link href="/licence" className="text-base hover:underline">Licence</Link></li>
+              <li><Link href="/refunds" className="text-base hover:underline">Refunds</Link></li>
+              <li><Link href="/privacy-policy" className="text-base hover:underline">Privacy Policy</Link></li>
+              <li><Link href="/terms-and-conditions" className="text-base hover:underline">Terms and Conditions</Link></li>
             </ul>
-            
           </div>
 
           {/* Column 4 */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Pages</h3>
-            <ul className="space-y-4	font-normal text-xs -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;">
-              {["Best Modern Design Templates", "Best AI SaaS Templates", "Best Marketing Templates", "Best Minimal Templates in React and Next.js", "Best components and templates with Framer Motion", "Amazing Tailwind CSS and Framer Motion Components"].map((item) => (
-                <li key={item}>
-                  <Link href="#" className="text-base hover:underline">
-                    {item}
-                  </Link>
-                </li>
-              ))}
+            <ul className="space-y-4 font-normal text-xs -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;">
+              <li><Link href="/best-modern-design-templates" className="text-base hover:underline">Best Modern Design Templates</Link></li>
+              <li><Link href="/best-ai-saas-templates" className="text-base hover:underline">Best AI SaaS Templates</Link></li>
+              <li><Link href="/best-marketing-templates" className="text-base hover:underline">Best Marketing Templates</Link></li>
+              <li><Link href="/best-minimal-templates" className="text-base hover:underline">Best Minimal Templates in React and Next.js</Link></li>
+              <li><Link href="/best-framer-motion-components" className="text-base hover:underline">Best components and templates with Framer Motion</Link></li>
+              <li><Link href="/amazing-tailwind-framer-motion-components" className="text-base hover:underline">Amazing Tailwind CSS and Framer Motion Components</Link></li>
             </ul>
           </div>
         </div>

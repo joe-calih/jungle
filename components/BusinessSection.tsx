@@ -5,11 +5,11 @@ import { ArrowRight, Users, Network } from "lucide-react"
 export default function Component() {
   return (
     <section className="w-full bg-white py-16">
-      <div className="mx-auto max-w-[1250px] px-4">
+      <div className="mx-auto max-w-[1200px] px-4">
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
           {/* Left Column */}
-          <div className="space-y-6">
-            <p className="text-base font-medium">— How it work</p>
+          <div className="space-y-8">
+            <p className="text-base font-medium text-muted-foreground">— How it work</p>
             <h2 className="text-4xl font-bold tracking-tight lg:text-5xl">
             More data. More insights
             </h2>

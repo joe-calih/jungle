@@ -20,16 +20,16 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
     <main className="flex-1">
     <HeroSection/>
-    <PopularServices/>
+    <ProcessSection/>
+    <BlogSection/>
     <Steps/>
     <FeatureSec/>
     <FeaturesSec/>
     <BusinessSection/>
     <Trust/>
+    <PopularServices/>
     <MarketingStats/>
-    <ProcessSection/>
     <PricingSection/>
-    <BlogSection/>
     <Pricecard/>
     <HeaderSection/>
     <CoreValues/>

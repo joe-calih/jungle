@@ -9,23 +9,8 @@ export default async function BlogSection() {
   const displayPosts = posts.slice(0, 3) // Display only the first 3 posts
 
   return (
-    <div className="w-full bg-white py-16">
+    <div className="w-full bg-white pb-16">
       <div className="mx-auto max-w-[1200px] px-4">
-        <div className="text-center mb-12">
-          <p className="text-sm text-gray-500 mb-4">LATEST INSIGHTS</p>
-          <h1 className="text-4xl font-bold mb-4">Blog Posts</h1>
-          <p className="text-gray-600 mb-4 max-w-2xl mx-auto line-clamp-5 leading-loose">
-            Stay up-to-date with the latest trends, tips, and insights in web development and design. 
-            Our blog covers a wide range of topics to help you stay ahead in the digital world.
-          </p>
-          <Link
-  href="/blog"
-  className="inline-flex items-center px-4 py-2 rounded-full bg-secondary text-black hover:underline transition-colors"
->
-  Explore all posts <ArrowRight className="ml-2 h-4 w-4" />
-</Link>
-
-        </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {displayPosts.map((post) => (
             <Card key={post.slug} className="border-none shadow-none">
@@ -60,6 +45,14 @@ export default async function BlogSection() {
               </CardFooter>
             </Card>
           ))}
+        </div>
+        <div className="text-center mb-12 py-5">
+          <Link
+  href="/blog"
+  className="inline-flex items-center px-4 py-2 rounded-full bg-secondary text-black hover:underline transition-colors">
+  Explore all posts <ArrowRight className="ml-2 h-4 w-4" />
+</Link>
+
         </div>
       </div>
     </div>
