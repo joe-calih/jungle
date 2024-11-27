@@ -1,13 +1,13 @@
 ---
-title: "How To Create a Custom Facebook Page: Step by Step"
-excerpt: "Dive deep into React Hooks and learn how they can simplify your components and improve your React applications."
+title: "The Power of Incentives in Non-profits Society Growth "
+excerpt: "Explaining the concept of micro-incentives and how they motivate jungle foundation."
 date: "2023-05-15"
 author:
   name: "Jane Doe"
   avatar: "/img/authors/08.jpg"
   description: "John is a seasoned web developer with 10 years of experience in React and Next.js."
 category: "SEO"
-image: "/img/facebook.jpeg"
+image: "/img/jungle/non_profit.jpg"
 readingTime: "10 min"
 views: 5432
 ---

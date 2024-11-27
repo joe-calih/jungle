@@ -1,13 +1,13 @@
 ---
-title: "Best and Poppular Chrome Extensions: A Comprehensive Guide"
-excerpt: "Dive deep into React Hooks and learn how they can simplify your components and improve your React applications."
+title: "How Micropayments Are Transforming Charitable Giving"
+excerpt: "The role of micropayments in creating a sustainable donation model for non-profits."
 date: "2023-05-15"
 author:
   name: "John Doe"
   avatar: "/img/authors/08.jpg"
   description: "John is a seasoned web developer with 10 years of experience in React and Next.js."
 category: "Marketing"
-image: "/img/chromr.webp"
+image: "/img/jungle/main.jpg"
 readingTime: "10 min"
 views: 5432
 ---

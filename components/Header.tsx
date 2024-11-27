@@ -2,7 +2,6 @@
 
 import * as React from "react"
 import Link from "next/link"
-import Image from "next/image"
 import { cn } from "@/lib/utils"
 import {
   NavigationMenu,
@@ -15,7 +14,7 @@ import {
 } from "@/components/ui/navigation-menu"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Heart, Star, Search, Sparkles, Box, LayoutGrid, LineChart, Monitor, Settings, Shapes, BarChart, Code, FileText, Paintbrush, PieChart, Plug, Users, X, Menu } from 'lucide-react'
+import { Heart, Star, Search, Sparkles, Box, LayoutGrid, LineChart, Monitor, BarChart, Code, FileText, Paintbrush, PieChart, Plug, Users, X, Menu } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
 export default function Header() {
@@ -35,121 +34,20 @@ export default function Header() {
     <header className={`sticky top-0 z-50 w-full bg-background transition-shadow ${isScrolled ? 'border-b shadow-sm' : ''}`}>
       <div className="flex h-16 items-center justify-between container mx-auto max-w-[1200px] px-4">
         <div className="mr-4 flex items-center">
-          <Link className="mr-6 flex items-center space-x-2" href="/">
-            <Image src="/favicon.ico" alt="Studio Logo" width={26} height={26} priority />
-            <span className="hidden font-bold sm:inline-block">Studio</span>
+          <Link className="mr-6 flex items-center space-x-2 font-bold sm:inline-block font"  href="/">
+            <span className="text-green-600 text-lg ">Jungle</span> Foundation
           </Link>
           <NavigationMenu className="hidden md:block">
             <NavigationMenuList className="px-3 py-2">
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-[15px] px-3 py-2 rounded-full hover:bg-secondary transition-colors">Features</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                        <div className="w-[1010px] flex flex-col items-center">
-                          <div className="max-w-[1200px] mx-auto p-6">
-                            <div className="grid grid-cols-4 gap-8">
-                              <div>
-                                <h3 className="font-semibold text-base mb-4">Content Writing</h3>
-                                <nav className="flex flex-col space-y-3">
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
-                                    Articles & Blog Posts
-                                  </Link>
-                                  <div className="flex items-center space-x-2">
-                                    <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
-                                      Content Strategy
-                                    </Link>
-                                    <Badge variant="secondary" className="bg-pink-100 text-pink-800">
-                                      NEW
-                                    </Badge>
-                                  </div>
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
-                                    Website Content
-                                  </Link>
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
-                                    Scriptwriting
-                                  </Link>
-                                </nav>
-                              </div>
-
-                              <div>
-                                <h3 className="font-semibold text-base mb-4">Book & eBook Publishing</h3>
-                                <nav className="flex flex-col space-y-3">
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
-                                    Book & eBook Writing
-                                  </Link>
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
-                                    Book Editing
-                                  </Link>
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
-                                    Beta Reading
-                                  </Link>
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900 flex items-center">
-                                    Self-Publish Your Book
-                                    <svg
-                                      className="w-4 h-4 ml-1"
-                                      fill="none"
-                                      stroke="currentColor"
-                                      viewBox="0 0 24 24"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth={2}
-                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                                      />
-                                    </svg>
-                                  </Link>
-                                </nav>
-                              </div>
-
-                              <div>
-                                <h3 className="font-semibold text-base mb-4">Business & Marketing Copy</h3>
-                                <nav className="flex flex-col space-y-3">
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
-                                    Brand Voice & Tone
-                                  </Link>
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
-                                    Business Names & Slogans
-                                  </Link>
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
-                                    Case Studies
-                                  </Link>
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
-                                    White Papers
-                                  </Link>
-                                </nav>
-                              </div>
-
-                              <div>
-                                <h3 className="font-semibold text-base mb-4">Translation & Transcription</h3>
-                                <nav className="flex flex-col space-y-3">
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
-                                    Translation
-                                  </Link>
-                                  <div className="flex items-center space-x-2">
-                                    <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
-                                      Localization
-                                    </Link>
-                                    <Badge variant="secondary" className="bg-pink-100 text-pink-800">
-                                      NEW
-                                    </Badge>
-                                  </div>
-                                  <Link href="#" className="text-base text-gray-600 hover:text-gray-900">
-                                    Transcription
-                                  </Link>
-                                </nav>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </NavigationMenuContent>
               </NavigationMenuItem>
               
 
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-[15px] px-3 py-2 rounded-full hover:bg-secondary transition-colors">Solutions</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                <div className="grid grid-cols-2 gap-8 p-6 w-[800px]">
+                <div className="grid grid-cols-1 gap-8 p-6 w-[400px]">
                   <div>
                     <h4 className="text-sm font-medium leading-none mb-4 text-muted-foreground">Use Cases</h4>
                     <div className="grid gap-4">
@@ -205,33 +103,6 @@ export default function Header() {
                           <div>
                             <div className="text-sm font-medium mb-1">Web Apps</div>
                             <p className="text-sm text-muted-foreground">Ship features, not infrastructure</p>
-                          </div>
-                        </a>
-                      </NavigationMenuLink>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-medium leading-none mb-4 text-muted-foreground">Users</h4>
-                    <div className="grid gap-4">
-                      <NavigationMenuLink asChild>
-                        <a href="#" className="group grid grid-cols-[40px_1fr] items-start gap-4 p-2 hover:bg-muted rounded-md">
-                          <div className="flex items-center justify-center size-10 rounded-md bg-sky-50">
-                            <Settings className="size-5 text-sky-500" />
-                          </div>
-                          <div>
-                            <div className="text-sm font-medium mb-1">Platform Engineers</div>
-                            <p className="text-sm text-muted-foreground">Automate away repetition</p>
-                          </div>
-                        </a>
-                      </NavigationMenuLink>
-                      <NavigationMenuLink asChild>
-                        <a href="#" className="group grid grid-cols-[40px_1fr] items-start gap-4 p-2 hover:bg-muted rounded-md">
-                          <div className="flex items-center justify-center size-10 rounded-md bg-indigo-50">
-                            <Shapes className="size-5 text-indigo-500" />
-                          </div>
-                          <div>
-                            <div className="text-sm font-medium mb-1">Design Engineers</div>
-                            <p className="text-sm text-muted-foreground">Deploy for every idea</p>
                           </div>
                         </a>
                       </NavigationMenuLink>
@@ -329,25 +200,6 @@ export default function Header() {
                       </ListItemWithIcon>
                     </ul>
                   </div>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-[15px] px-3 py-2 rounded-full transition-colors">Pricing</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr_1fr]">
-                    <ListItem href="/pricing/basic" title="Basic Plan">
-                      Perfect for individuals and small teams.
-                    </ListItem>
-                    <ListItem href="/pricing/pro" title="Pro Plan">
-                      Advanced features for growing businesses.
-                    </ListItem>
-                    <ListItem href="/pricing/enterprise" title="Enterprise Plan">
-                      Custom solutions for large organizations.
-                    </ListItem>
-                    <ListItem href="/pricing/compare" title="Compare Plans">
-                      See all features side by side.
-                    </ListItem>
-                  </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem className="text-sm rounded-full transition-colors">

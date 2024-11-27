@@ -1,13 +1,13 @@
 ---
-title: "Digital Marketing for Proffesionals: Pro Guide"
-excerpt: "Dive deep into React Hooks and learn how they can simplify your components and improve your React applications."
+title: " Empowering Communities Through Micro-Donations: Real Stories"
+excerpt: "Stories from individuals or communities who have benefited from the Jungle Foundation's micro-donation programs."
 date: "2023-05-15"
 author:
   name: "Jane Doe"
   avatar: "/img/authors/05.png"
   description: "John is a seasoned web developer with 10 years of experience in React and Next.js."
 category: "React"
-image: "/img/marketing.webp"
+image: "/img/jungle/6.jpg"
 readingTime: "10 min"
 views: 5432
 ---

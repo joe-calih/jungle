@@ -13,8 +13,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Studio Kenya",
-  description: "Studio Kenya media company provides news coverage on a range of topics, including marketing, technology, social media, and business.",
+  title: "Jungle Foundation - Consume Kenyan by Choice",
+  description: "Jungle Foundation is a non profit incentive that aims towards a noble course of positively impacting the society.",
 };
 
 export default function RootLayout({

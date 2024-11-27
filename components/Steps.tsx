@@ -1,27 +1,28 @@
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Check } from "lucide-react";
 
 export default function Component() {
   const steps = [
     {
       number: "01",
-      title: "Sign Up & Account Creation",
+      title: "Join the Cause",
       description:
-        "Begin your journey by creating an account with Quad! Click on the 'Sign Up' button and fill in your details to access your personalised dashboard.",
+        "Start by signing up to become part of Jungle Foundation. Click on 'Join Now' to access your personalized dashboard and get involved in our mission.",
     },
     {
       number: "02",
-      title: "Comprehensive Keyword Research",
+      title: "Support Impactful Projects",
       description:
-        "Our software begins by conducting thorough keyword research tailored to your industry and target audience. We identify high-value keywords with optimal search volume.",
+        "We guide you in selecting impactful projects to support. Your involvement will make a real difference in local communities and society.",
     },
     {
       number: "03",
-      title: "On-Page Optimisation Guidance",
+      title: "Track Your Contribution",
       description:
-        "Our software provides detailed on-page optimization recommendation to enhance your website's visibility and relevance to search engines.",
+        "Monitor the progress of the projects you support and see the tangible impact you're helping create. We provide regular updates on the success of each initiative.",
     },
-  ]
+  ];
 
   return (
     <section className="w-full bg-white py-12 md:py-24 border-t">
@@ -29,19 +30,36 @@ export default function Component() {
         <div className="grid gap-12 lg:grid-cols-2">
           <div className="flex flex-col justify-center space-y-6">
             <Badge className="w-fit bg-primary/10 text-primary rounded-full" variant="secondary">
-              Step-by-Step
+              Join Our Mission
             </Badge>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Your Path to SEO Success Mastering Every Step With Quad
-            </h2>
+            <ul className="space-y-2">
+              <li className="flex items-center">
+                <Check className="h-5 w-5 mr-2 text-green-500" />
+                Community Impact Initiatives
+              </li>
+              <li className="flex items-center">
+                <Check className="h-5 w-5 mr-2 text-green-500" />
+                Local Project Partnerships
+              </li>
+              <li className="flex items-center">
+                <Check className="h-5 w-5 mr-2 text-green-500" />
+                Transparent Reporting
+              </li>
+              <li className="flex items-center">
+                <Check className="h-5 w-5 mr-2 text-green-500" />
+                Volunteer Opportunities
+              </li>
+              <li className="flex items-center">
+                <Check className="h-5 w-5 mr-2 text-green-500" />
+                24/7 Support
+              </li>
+            </ul>
             <p className="max-w-[600px] text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
-              Welcome to the ultimate solution for managing your SEO strategies
-              effectively. Our SEO Management Software empowers businesses to
-              streamline their SEO efforts, optimize website
+              Jungle Foundation empowers individuals to make a lasting social impact. Join us in creating a better future by supporting meaningful projects in communities.
             </p>
             <div className="pt-2">
               <Button size="lg" className="bg-primary text-primary-foreground">
-                Contact Us
+                Get Involved Now
               </Button>
             </div>
           </div>
@@ -51,7 +69,7 @@ export default function Component() {
                 <div className="absolute left-0 top-0 flex h-9 w-9 items-center justify-center rounded-full bg-primary text-sm font-bold text-primary-foreground">
                   {step.number}
                 </div>
-                 <div className="space-y-2">
+                <div className="space-y-2">
                   <h3 className="font-semibold text-lg">{step.title}</h3>
                   <p className="text-gray-600">{step.description}</p>
                 </div>
@@ -61,5 +79,5 @@ export default function Component() {
         </div>
       </div>
     </section>
-  )
+  );
 }
