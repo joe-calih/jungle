@@ -38,7 +38,7 @@ export default async function BlogPage({ searchParams }: { searchParams: { page?
     <div className="min-h-screen bg-gray-100">
       <div className="max-w-6xl mx-auto px-4 py-12">
         <section className="mb-16 text-center">
-          <h1 className="text-5xl font-bold mb-6">Discover Web Development Insights</h1>
+          <h1 className="text-5xl font-bold mb-6">Discover Jungle Foundation Articles</h1>
           <p className="text-xl mb-8 text-gray-600">Stay ahead in the world of web development with our expert articles and tutorials.</p>
           <SearchForm />
           <CategoryFilter categories={['All', ...categories]} selectedCategory={selectedCategory || 'All'} />
